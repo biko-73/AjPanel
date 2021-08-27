@@ -158,7 +158,7 @@
 [v1.2.7  ..  2021-04-01]
 - Fixed reported crashes on DM7080.
 
-# ------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 [v1.2.6  ..  2021-03-31]
 - Added "Find" and "Service Tools" to Channel Context Menu (found list can be added to bouquets).
 - Added "Parental Control" and "Hidden Services" columns to "Services (All)" with filtering and ability to set them on/off for any service.
@@ -166,12 +166,12 @@
 - Added more "Box Info."
 - "Current Service (info)" will show all bouquets for the current service.
 
-# -------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 [v1.2.5  ..  2021-03-16]
 - Changed Tuner Info. method for some images.
 - Fixed GUI Restart methods (some images hang after restarts).
 
-# -------------------------------------------------------------------------------
+# --------------------------------------------------------------------------
 [v1.2.4  ..  2021-03-15]
 - Terminal will use Fixed-Width Font if the font exists in your firmware.
 - Fixed the appearance of Tables and File Edit for OpenViX.
@@ -179,7 +179,7 @@
 - Added Service Filter (Blue Button) to "Services (All)" to filter Satellites and custom words. You can change the custom words in the file "ajpanel_services_filter" (in the backup directory).
 - Added Box and Tuners Info.
 
-# ---------------------------------------------------------------------------------
+# -------------------------------------------------------------------------
 [v1.2.3  ..  2021-03-08]
 - Added File Editor to File Manager. The "Edit" option will appear if pointed to non-binary files (regardless of file extension).
 - Added "Input Type" to Confi. (Options = Virtual Keyboard, System Default, Built-in). It will fall back to the Built-in method (e.g. if Virtual Keyboard is not installed).
@@ -187,14 +187,14 @@
 - Rearranged buttons usage in tables. "OK" button replaces the Blue button to zap. "Info" button shows row info.
 - Custom commands file can be edited within the Terminal.
 
-# ----------------------------------------------------------------------------------
+# -------------------------------------------------------------------------
 [v1.2.2  ..  2021-02-28]
 - Improved Terminal commands history handling.
 - Terminal will use Virtual Keyboard (if exists) for command entry.
 - Terminal custom command file "LinuxCommands.lst" will be automatically moved from the plugin path to your backup directory when you launch the Terminal.
 - Fixed some issues.
 
-# -----------------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 [v1.2.1  ..  2021-02-25]
 - Added Simple Terminal to run Linux commands.
 - Added "Update List of Available Packages" (in Plugins Tools).
@@ -202,7 +202,7 @@
 - Fixed some reported problems on DreamOS and Vu+Zero4k.
 - Fixed Logo size not fully shown on some images.
 
-# -------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 [v1.2.0  ..  2021-02-23]
 - Added Signal Strength monitor in Service Tools (also shown hen zapping).
 - Moved Extensions and SystemPlugins lists to a new table.
@@ -217,7 +217,7 @@
 - Enter "0000" in the Main Menu to enable "Delete/Rename/Move/Permission" on system directories.
 - Fixed crashes on DreamOS.
 
-# --------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 [v1.1.8  ..  2021-02-14]
 - Added "Install" (Red Button) to Plugin Tools ("Download" table).
 - Added "Export Table to HTML".
@@ -225,44 +225,44 @@
 - Fixed DreamOS crashes (created a separate console for DreamOS).
 - Note: Few functions are currently disabled on Debian system (coming soon).
 
-# ---------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 [v1.1.7  ..  2021-02-11]
 - Added options to export tables to ".txt" and ".csv" files.
 - Added options to Configuration to customize the Download and Export paths.
 - Added "Change Log" to Plugin Version info.
 - Fixed latest reported crashes.
 
-# -----------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 [v1.1.6  ..  2021-02-09]
 - Improved Search-by-Typing to show the typed char highlighted within its group of characters.
 - Fixed "Process Failed. in ipk/deb package creation when the target path name includes spaces.
 - Fixed DreamOS Crash (the GUI Skin does not accept the commands "setBorderColor" and "setBorderWidth".
 - Fixed crash on OpenVision (missing some Service info.).
 
-# ------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 [v1.1.5  ..  2021-02-07]
 - Added the Green Button to READERs table (to switch a subscription On and Off.
 - Added a new option to the panel Configuration menu to select the output path for the created IPK/DEB Package files:
 - SoftCAM Info. is now tabulated.
 - Fixed DreamOS Crash (the GUI Skin does not accept the command "setFont")
 
-# --------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 [v1.1.4  ..  2021-02-05]
 - IPK/DEB Package creation will automatically detect if previous control files exit in CONTROL or DEBIAN directory.
 - All the table in Plugins Tools will now show the first column as the plugin name (for easy filtering/searching).
 - Fixed text alignment in commands console.
 
-# ---------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v1.1.3  ..  2021-02-03]
 - IPK/DEB Package creation window will validate and highlight non-standard package parameters (with warnings).
 - Added the Blue Button to the IPK/DEB Package creation window to Package Version.
 - Fixed the crash on some GUI Skins (not accepting the commands "setVAlign" and "setHAlign").
 
-# ----------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v1.1.2  ..  2021-02-03]
 - Added "Root Path" to the Installation Target Path list in the IPK/DEB Package for firmware that do not show the root directory.
 
-# -----------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v1.1.1  ..  2021-02-02]
 - Added a "Wait ..." message when entering a directory with many files in File Manager.
 - Added new window to handle IPK/DEB Packages with the ability to change the Installation Target Path.
@@ -270,7 +270,7 @@
 - Fixed icons issue. GUI Skins on Vu+Zero4k (BlackHole 3.1.0B) does not have the function BT_KEEP_ASPECT_RATIO.
 - Fixed the Console screen not showing data on PLi-FullNightHD GUI Skin.
 
-# -------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 [v1.1.0  ..  2021-01-30]
 - Added Row Number to tables info. (when OK is clicked).
 - Channel-Up button jumps to first row in all tables.
@@ -287,6 +287,6 @@
 - The plugin now attempts to install "ar" command from feed (if the correct version is not found).
 - Fixed Python3 compatibility.
 
-# -----------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------
 [v1.0.0  ..  2021-01-15]
 - First release.
