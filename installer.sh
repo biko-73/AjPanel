@@ -12,8 +12,8 @@
 # ------------------------------------------------------------------------------------------------------------
 # Mode:
 #	0 = Auto	... IPK or DEB (depending on system)
-#	1 = ipk		... Example : enigma2-plugin-extensions-ajpanel_v2.3.0_all.ipk
-#	2 = deb		... Example : enigma2-plugin-extensions-ajpanel_v2.3.0_all.deb
+#	1 = ipk		... Example : enigma2-plugin-extensions-ajpanel_v2.4.1_all.ipk
+#	2 = deb		... Example : enigma2-plugin-extensions-ajpanel_v2.4.1_all.deb
 #	3 = tar.gz	... Example : AJPanel_v2.3.0.tar.gz
 AJP_INSTALL_TYPE=0										# File to download/install
 
@@ -122,7 +122,6 @@ if [ -f $AJP_VER_TMP ]; then
 			echo "**                                                                    *"
 			echo "**                       AJPanel    : $AJP_VERSION                          *"
 			echo "**                       Uploaded by: Biko_73                         *"
-			echo "**                       Server by  : linuxsat                        *"
 			echo "**  Support    : https://www.tunisia-sat.com/forums/threads/4165512/  *"
 			echo "**                                                                    *"
 			echo "***********************************************************************"
