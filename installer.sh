@@ -3,7 +3,7 @@
 # SCRIPT : DOWNLOAD AND INSTALL AJPANEL
 # ===================================================
 #
-# Command: wget -q "--no-check-certificate" http://biko-73.selfip.com/lion/AJPanel/installer.sh -O - | /bin/sh
+# Command: wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -qO - | /bin/sh
 #
 # ===================================================
 
@@ -20,7 +20,7 @@ AJP_INSTALL_TYPE=0										# File to download/install
 # ------------------------------------------------------------------------------------------------------------
 # Server Parameters
 # ------------------------------------------------------------------------------------------------------------
-AJP_URL="http://biko-73.selfip.com/lion/AJPanel/"		# Custom URL
+AJP_URL="https://github.com/biko-73/AjPanel/blob/main/"		# Custom URL
 VER_FILE_NAME='version'									# Version File Name on Server
 
 
