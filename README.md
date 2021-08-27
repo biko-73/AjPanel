@@ -270,7 +270,7 @@
 - Fixed icons issue. GUI Skins on Vu+Zero4k (BlackHole 3.1.0B) does not have the function BT_KEEP_ASPECT_RATIO.
 - Fixed the Console screen not showing data on PLi-FullNightHD GUI Skin.
 
-# -------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 [v1.1.0  ..  2021-01-30]
 - Added Row Number to tables info. (when OK is clicked).
 - Channel-Up button jumps to first row in all tables.
@@ -287,6 +287,6 @@
 - The plugin now attempts to install "ar" command from feed (if the correct version is not found).
 - Fixed Python3 compatibility.
 
-# ---------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 [v1.0.0  ..  2021-01-15]
 - First release.
