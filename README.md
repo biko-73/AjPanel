@@ -1,7 +1,7 @@
 # AjPanel
  Panel Tools 4 enigma2
 
-# ------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------
 [v2.4.1  ..  2021-08-05]
 - Added option to Browse IPTV Server from Subscription M3U file.
 .. Now, you don't need to convert the M3U file with thousands of channels to a bouquet.
@@ -9,7 +9,7 @@
 - Replaced the filters for "Channels with No-Names" with a new option to "Delete Channels with no names".
 - Improved "Current Service (Info.)" layout and performance.
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------
 [v2.4.0  ..  2021-08-03]
 - Improved "Signal Monitor":
 .. Added more Hotkey Options (Long-OK , Long-Exit , Long-Red).
@@ -28,19 +28,19 @@
 - Fixed "Connection Timeout" problem when requesting IPTV info from the server.
 - Fixed IPTV "Series" List (not showing Episodes from some servers).
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------
 [v2.3.2  ..  2021-07-28]
 - Added notification of new update:
 .. Notification is shown in main title (if url is provided in "ajpanel_update_url").
 .. Enable/Disable checking for update in Settings Menu.
 - Fixed another crash on DreamOS (when using "Find").
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------
 [v2.3.1  ..  2021-07-27]
 - Improved AJPanel Update to download and install ipk/deb packages.
 - Fixed the crashes from "Find" and "Rest Parental Control Settings".
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------
 [v2.3.0  ..  2021-07-25]
 - You can restore Channels without a restart.
 - You can change the State of the Hidden Channels List without a restart.
@@ -55,7 +55,7 @@
 - Fixed the problem of transparent text on some images.
 .. If you still see transparent text, change the coloring scheme from the Settings.
 
-# ------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------
 [v2.2.0  ..  2021-07-20]
 - Improve Signal Monitor:
 .. Resize the screen with RCU buttons ("<", "0, ">").
@@ -68,13 +68,13 @@
 .. However, "Find" does not open the Keyboard on DreamOS (working on it).
 - General improvements + less package size and files.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 [v2.1.1  ..  2021-07-17]
 - Fixed the problems of showing the Signal Monitor from the Long-OK Hotkey.
 - Improved handling of Markers in Local IPTV tables.
 - Added playing channel name in Local IPTV channels table.
 
-# ------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------
 [v2.1.0  ..  2021-07-16]
 - Added IPTV Server Browser (watch IPTV channels before converting to bouquets).
 - Added "Long-OK" Hotkey to show Signal Monitor (Enable/Disable in Setting).
@@ -85,7 +85,7 @@
 .. 2- Copy file to AJPanel Backup directory.
 .. 3- The "Update" and "Reinstall" options will appear in the Settings Menu.
 
-# ------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------
 [v2.0.0  ..  2021-07-07]
 - Ready for Python-v3.9.5 (tested on OpenATV-7 and OpenVix-v5.5).
 - Signal Strength can be repositioned on the screen.
@@ -102,18 +102,18 @@
 .. Automatic change of References to match channels from Sat/C/T channels.
      (this allows IPTV channels to get the same benefit of PIcons, EPG, etc.).
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 [v1.4.2  ..  2021-05-26]
 - Added option to change PIcons path.
 - Added Network Backup/Restore.
 - Added SCam files to Softcam Backup/Restore.
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 [v1.4.1  ..  2021-05-22]
 - Improved "Channels with no Transponder" filter.
 - Fixed crash when moving File Manager bookmark up/down.
 
-# ------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------
 [v1.4.0  ..  2021-05-08]
 - Added IPTV Services Table.
 - Added Multi-Select to some tables (to add to channels to a bouquet).
@@ -126,39 +126,39 @@
 - Can create new Bouquet when adding services to a bouquet.
 - Fixed some issues.
 
-# ------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------
 [v1.3.2  ..  2021-04-24]
 - Added Transponders table to Services/Channels Tools.
 - Added Transponders information to Service Finder table.
 - Improved Service Finder to include IPTV channels.
 - Improved "Add to Bouquet" to opt for adding one or all services to a bouquet.
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 [v1.3.1  ..  2021-04-15]
 - Fixed font related crash on DM920.
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 [v1.3.0  ..  2021-04-15]
 - Added "Zap History" to Channel Context Menu.
 - Enabled "Zap" in "Services (Parental Control List)" even if PC is active.
 - Improved IPTV Channels information.
 
-# ------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 [v1.2.9  ..  2021-04-11]
 - Added "Hide Channel" to Channel Context Menu (to hide a selected channel).
 - Updated Service Types database.
 - Updated Video Type in "Current Service (info.)"
 
-# ------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 [v1.2.8  ..  2021-04-02]
 - Added transponder information to the Signal Strength Monitor.
 - Fixed the crash when using "Current Service (Info.)".
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v1.2.7  ..  2021-04-01]
 - Fixed reported crashes on DM7080.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v1.2.6  ..  2021-03-31]
 - Added "Find" and "Service Tools" to Channel Context Menu (found list can be added to bouquets).
 - Added "Parental Control" and "Hidden Services" columns to "Services (All)" with filtering and ability to set them on/off for any service.
@@ -166,12 +166,12 @@
 - Added more "Box Info."
 - "Current Service (info)" will show all bouquets for the current service.
 
-# ------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 [v1.2.5  ..  2021-03-16]
 - Changed Tuner Info. method for some images.
 - Fixed GUI Restart methods (some images hang after restarts).
 
-# ------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 [v1.2.4  ..  2021-03-15]
 - Terminal will use Fixed-Width Font if the font exists in your firmware.
 - Fixed the appearance of Tables and File Edit for OpenViX.
@@ -179,7 +179,7 @@
 - Added Service Filter (Blue Button) to "Services (All)" to filter Satellites and custom words. You can change the custom words in the file "ajpanel_services_filter" (in the backup directory).
 - Added Box and Tuners Info.
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------
 [v1.2.3  ..  2021-03-08]
 - Added File Editor to File Manager. The "Edit" option will appear if pointed to non-binary files (regardless of file extension).
 - Added "Input Type" to Confi. (Options = Virtual Keyboard, System Default, Built-in). It will fall back to the Built-in method (e.g. if Virtual Keyboard is not installed).
@@ -187,14 +187,14 @@
 - Rearranged buttons usage in tables. "OK" button replaces the Blue button to zap. "Info" button shows row info.
 - Custom commands file can be edited within the Terminal.
 
-# ------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------
 [v1.2.2  ..  2021-02-28]
 - Improved Terminal commands history handling.
 - Terminal will use Virtual Keyboard (if exists) for command entry.
 - Terminal custom command file "LinuxCommands.lst" will be automatically moved from the plugin path to your backup directory when you launch the Terminal.
 - Fixed some issues.
 
-# ------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------
 [v1.2.1  ..  2021-02-25]
 - Added Simple Terminal to run Linux commands.
 - Added "Update List of Available Packages" (in Plugins Tools).
@@ -202,7 +202,7 @@
 - Fixed some reported problems on DreamOS and Vu+Zero4k.
 - Fixed Logo size not fully shown on some images.
 
-# ------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------
 [v1.2.0  ..  2021-02-23]
 - Added Signal Strength monitor in Service Tools (also shown hen zapping).
 - Moved Extensions and SystemPlugins lists to a new table.
@@ -217,7 +217,7 @@
 - Enter "0000" in the Main Menu to enable "Delete/Rename/Move/Permission" on system directories.
 - Fixed crashes on DreamOS.
 
-# ------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------
 [v1.1.8  ..  2021-02-14]
 - Added "Install" (Red Button) to Plugin Tools ("Download" table).
 - Added "Export Table to HTML".
@@ -225,44 +225,44 @@
 - Fixed DreamOS crashes (created a separate console for DreamOS).
 - Note: Few functions are currently disabled on Debian system (coming soon).
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------
 [v1.1.7  ..  2021-02-11]
 - Added options to export tables to ".txt" and ".csv" files.
 - Added options to Configuration to customize the Download and Export paths.
 - Added "Change Log" to Plugin Version info.
 - Fixed latest reported crashes.
 
-# ------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------
 [v1.1.6  ..  2021-02-09]
 - Improved Search-by-Typing to show the typed char highlighted within its group of characters.
 - Fixed "Process Failed. in ipk/deb package creation when the target path name includes spaces.
 - Fixed DreamOS Crash (the GUI Skin does not accept the commands "setBorderColor" and "setBorderWidth".
 - Fixed crash on OpenVision (missing some Service info.).
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------
 [v1.1.5  ..  2021-02-07]
 - Added the Green Button to READERs table (to switch a subscription On and Off.
 - Added a new option to the panel Configuration menu to select the output path for the created IPK/DEB Package files:
 - SoftCAM Info. is now tabulated.
 - Fixed DreamOS Crash (the GUI Skin does not accept the command "setFont")
 
-# ------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------
 [v1.1.4  ..  2021-02-05]
 - IPK/DEB Package creation will automatically detect if previous control files exit in CONTROL or DEBIAN directory.
 - All the table in Plugins Tools will now show the first column as the plugin name (for easy filtering/searching).
 - Fixed text alignment in commands console.
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------
 [v1.1.3  ..  2021-02-03]
 - IPK/DEB Package creation window will validate and highlight non-standard package parameters (with warnings).
 - Added the Blue Button to the IPK/DEB Package creation window to Package Version.
 - Fixed the crash on some GUI Skins (not accepting the commands "setVAlign" and "setHAlign").
 
-# ------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------
 [v1.1.2  ..  2021-02-03]
 - Added "Root Path" to the Installation Target Path list in the IPK/DEB Package for firmware that do not show the root directory.
 
-# ------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------
 [v1.1.1  ..  2021-02-02]
 - Added a "Wait ..." message when entering a directory with many files in File Manager.
 - Added new window to handle IPK/DEB Packages with the ability to change the Installation Target Path.
@@ -270,7 +270,7 @@
 - Fixed icons issue. GUI Skins on Vu+Zero4k (BlackHole 3.1.0B) does not have the function BT_KEEP_ASPECT_RATIO.
 - Fixed the Console screen not showing data on PLi-FullNightHD GUI Skin.
 
-# ------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------------
 [v1.1.0  ..  2021-01-30]
 - Added Row Number to tables info. (when OK is clicked).
 - Channel-Up button jumps to first row in all tables.
@@ -287,6 +287,6 @@
 - The plugin now attempts to install "ar" command from feed (if the correct version is not found).
 - Fixed Python3 compatibility.
 
-# ------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------
 [v1.0.0  ..  2021-01-15]
 - First release.
