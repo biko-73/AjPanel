@@ -3,7 +3,7 @@
 # SCRIPT : DOWNLOAD AND INSTALL AJPANEL
 # ===================================================
 #
-# Command: wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -qO - | /bin/sh
+# Command: wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh
 #
 # ===================================================
 
