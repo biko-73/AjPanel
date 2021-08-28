@@ -20,7 +20,7 @@ AJP_INSTALL_TYPE=0										# File to download/install
 # ------------------------------------------------------------------------------------------------------------
 # Server Parameters
 # ------------------------------------------------------------------------------------------------------------
-AJP_URL="https://github.com/biko-73/AjPanel/blob/main/"		                                # Custom URL
+AJP_URL="https://raw.githubusercontent.com/biko-73/AjPanel/main/"		                # Custom URL
 VER_FILE_NAME='version'									        # Version File Name on Server
 
 
