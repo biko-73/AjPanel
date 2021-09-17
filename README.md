@@ -15,7 +15,7 @@
 - Improved text colors in some tables (for DreamOS).
 - Click Menu key for help on Keys in Signal Monitor, Player Controller and PIcons Manager.
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------
 [v2.5.0  ..  2021-08-30]
 - New AJPanel logo (by Oktus).
 - Added Media/Stream Player Controller (for IPTV and recorded media files).
