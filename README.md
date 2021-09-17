@@ -1,6 +1,52 @@
 # AjPanel
  Panel Tools 4 enigma2
 
+[v2.5.1  ..  2021-09-17]
+- Zap channels with Channel-Up and Channel-Down from:
+.. Signal Monitor.
+.. Player Controller.
+.. PIcons Manager.
+- Added the option "All to Playlist" to create one playlist file for all m3u files. Available in:
+.. 1- IPTV >> IPTV Server Browser (from M3U File) >> Blue button.
+.. 2- IPTV >> Convert m3u File to Bouquet (from m3u File List) >> Blue button.
+- Added the option "Share Reference with Satellite/C/T Channel" to change individua IPTV reference to an existing channel (to share PIcon and EPG).
+- Added "Save" (Red button) to save Package Installation result to the Export Directory.
+- Added the option "Remove Package (show all)" to "Plugins" (to remove any installed package).
+- Improved text colors in some tables (for DreamOS).
+- Click Menu key for help on Keys in Signal Monitor, Player Controller and PIcons Manager.
+
+# ------------------------------------------------------------------------------------------------------------
+[v2.5.0  ..  2021-08-30]
+- New AJPanel logo (by Oktus).
+- Added Media/Stream Player Controller (for IPTV and recorded media files).
+.. Play video/audio files from File Manager.
+.. Features: Forward, Rewind, Pause, Replay, Cutlist, Info/PIcon.
+.. Added Media Player Controller .
+.. Click RCU "Info" button for Channel Info, PIcon and EPG (use "Help" key for Vu+).
+.. Click RCU "Menu" button for keys usage.
+- Improved IPTV PIcons downloader:
+.. Download progress is shown with capability to stop the download and resume later.
+.. PIcon-download will automatically stop when it detects major problems.
+.. PIcon-download will skips PIcon files with size = 0 bytes.
+- Current Service (Info.):
+.. Added simple EPG (for Current/Next Event in Sat/C/T channels).
+.. Added "Save" (Red Button) to save Channel Info Text to your Export Directory.
+.. PIcon image is auto-resized to fit movie posters/covers (requires "ffmpeg").
+.. IPTV Channel PIcon is automaticlly added to PIcons directory (requires "ffmpeg").
+- IPTV:
+.. Default Reference Type can be changed from Setting (types = 1, 4097, 5001, 5002, 8192, 8193).
+.. Added option to browse the server from playing IPTV channel.
+.. Added option to check and filter the Authorized Servers from playlist files.
+.. Fixed the crash caused by adding IPTV bouquet name that includes restricted symbols.
+- PIcons Manager:
+.. Added new filter in PIcons Manager for IPTV PIcons.
+.. Fixed chName not shown for IPTV PIcons.
+- Improved Terminal handling of comments from commands files + different colors for comments.
+- Changed default Hotkey to Long-Exit.
+- Signal Monitor:
+.. Click RCU "Info" button for Channel Info, PIcon and EPG (use "Help" key for Vu+).
+.. Click RCU "Menu" button for keys usage.
+
 # --------------------------------------------------------------------
 [v2.4.1  ..  2021-08-05]
 - Added option to Browse IPTV Server from Subscription M3U file.
