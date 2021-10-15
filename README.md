@@ -1,6 +1,27 @@
 # AjPanel
  Panel Tools 4 enigma2
+ 
+[v3.0.0  ..  2021-10-15]
+- Added Stalker-Middleware support.
+.. Can import portal data from most portal/stalker file formats (one-line portal or multi-MAC lines).
+.. The panel will search for all .txt/.conf files with names that include the words "portal" or "stalker".
+.. You can add channels to a bouquet and play channels directly from bouquets + download PIcons.
+.. To play a frozen channel from bouquets, just launch the Player Controller from hotkey (even for 1 second).
+.. When the streaming starts, you can exit the Player Bar (or hide it with OK Button).
+.. Use the Green Button in the Player Controller to refresh the streaming when it freezes.
+- Enabled Channel-Up/Down in the Player Controller to zap in all IPTV tables.
+- Added option to search for a name in M3U Servers (search in Live, VOD and Series).
+.. Find a full name or a word in the name (can use multi words separated by commas).
+.. Find names that start with a word (example: ^,word1,word2).
+- Added settings option to hide Adult Channels from IPTV-Servers.
+- Added settings option to remove IPTV Channel Name Tag (|EN| , |AR|Drama|) when browsing servers.
+- Added settings options to Backup/Restore AJPanel Settings.
+- You can now create IPK/DEB packages with multiple directories as follows:
+.. 1- Collect your directories with their full puth into any temporary directory.
+.. 2- Set "Installation Path" to "Root '/' (Multiple Directories Package)"
+.. 3- Create the IPK/DEB.
 
+# ---------------------------------------------------------------------
 [v2.5.1  ..  2021-09-17]
 - Zap channels with Channel-Up and Channel-Down from:
 .. Signal Monitor.
