@@ -1,6 +1,23 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v3.1.0  ..  2021-10-22]
+- Fixed an issue with some portal servers when adding channels to a new bouquet.
+.. NOTE:
+..   Previously created portal bouquets will not work with this version.
+..   Please create new ones.
+- Improved refreshing portal frozen movie/series to restore the last played position.
+- Improved IPTV handling:
+.. Faster search for IPTV files (Portal/Stalker, Playlist, M3U).
+.. Reading server data from Playlist/Portal/Stalker files including mixed data.
+.. Checking/Filtering Authorized Servers.
+.. Finding a name in Live/VOD/Series.
+.. Channel Info.
+.. User Account Info.
+.. Channel name prefix removal.
+- Fixed the issue of getting no internet connectivity on "Vu+ Duo 4K Se".
+- Moved some long processes into Progress Bar (so that they can be cancelled at any point).
+# ----------------------------------------------------------------
 [v3.0.0  ..  2021-10-15]
 - Added Stalker-Middleware support.
 .. Can import portal data from most portal/stalker file formats (one-line portal or multi-MAC lines).
