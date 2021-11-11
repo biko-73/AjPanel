@@ -1,6 +1,33 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v3.2.0  ..  2021-11-11]
+- Zap Portal channel from bouquets (without using the Hotkey). Currently not working on DreamOS with official image.
+- Added "AJ Signal/Player" to Extension Menu to open the Signal Monitor or Player Controller (depending on the current channel).
+.. This can be used by DreamOS users as a quick access to the Player Controller (to zap portal channels from bouqutes).
+- Added Search function (Yellow Button) to find name in VOD and Series Categories in Portal Servers.
+.. Current search in portal servers works with a word or sentence (no words separated by commas yet).
+- Added Color Changer for Main Page (click Menu in Main Page).
+- Improved Player Controller bar:
+.. Added Up/Down to the Player Controller (to zap the same way with Chan-Up/Down and Page-Up/down).
+.. Fixed Zapping from bouquet to start the stream from the beginning.
+- Improved Terminal.
+.. Added Red Button to save Terminal text to a file.
+.. Use Exit Button to stop a running command (same as Ctrl-C in Telnet).
+.. Exiting the Terminal needs confirmation now (in case you need to save the results).
+.. Opening commands editor will point to the current selected line number in the original file.
+.. Added Yellow Button to clear Commands History.
+- Improved Channel Info (for all channel types).
+- Rearranged File Manager buttons (Red Button = Exit, and Cancel/Exit Button = go up to parent directory).
+- Added Red Button to save text from almost all text windows.
+- Improved IPTV Categories tables + added different color per page.
+- Added "Row Number" and Total Rows to all Services/IPTV Tables (will be shown with Info. Button).
+- Fixed internet connectivity-checking function for "Vu+ Duo4K Se" and "OpenDroid".
+- Redesigned some options to work with Progress Bar (you can cancel at any point).
+.. 1- "Share Reference with Satellite/C/T Channel".
+.. 2- "Analyse m3u File".
+- Fixed a crash caused by corrupted channel file (lamedb file).
+# ----------------------------------------------------------------
  [v3.1.0  ..  2021-10-22]
 - Fixed an issue with some portal servers when adding channels to a new bouquet.
 .. NOTE:
