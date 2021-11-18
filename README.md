@@ -1,6 +1,24 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v3.2.1  ..  2021-11-18]
+- Improved the Player Controller:
+.. Added info. to the bar (Date, Time, Resoultion, FPS, Remaining Time).
+.. Added Menu to change position to to Top/Bottom of the screen.
+.. Added menu option to launch IPTV page (if the player is opened by the Hotkey or from Extension Menu).
+- Added "AJ IPTV" to Extension Menu (for easy access to IPTV options).
+- Improved "Share Reference with Satellite/C/T Channel".
+.. Added new option "Share Reference with Satellite/C/T Service (manual entry)" to enter name with keyboard.
+.. Fixed "Share Reference with Satellite/C/T Channel" (sometimes hangs on DreamOS).
+- Improved Portal IPTV Channels.
+.. Faster Zap from bouquets.
+.. Channel Info will show Host, MAC, Mode, and a shorter URL.
+- Fixed response when list is empty in:
+.. "Services (Hidden List)"
+.. "Services (Parental-Control List)"
+- Improved PIcons >> "Suggest PIcons for Current Channel". Now works with Progress Bar (you can cancel at any point).
+- Improved Progress Bar to show number of found items and the total processed records.
+# ----------------------------------------------------------------
  [v3.2.0  ..  2021-11-11]
 - Zap Portal channel from bouquets (without using the Hotkey). Currently not working on DreamOS with official image.
 - Added "AJ Signal/Player" to Extension Menu to open the Signal Monitor or Player Controller (depending on the current channel).
