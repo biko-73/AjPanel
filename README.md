@@ -1,6 +1,18 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v3.2.2 ..  2021-11-25]
+- Added "AJ Info." option to "Events info menu" and "Event View Context Menu".
+.. This is to access AJPanel-Channel-Info from device default info (Long-Info or Info >> Menu).
+- Improved "Share Reference with Satellite/C/T Service (manual entry)":
+.. Fixed "Name not found" if the IPTV channel name includes a prefix (example : "(FR) " , "VIP " , etc).
+.. Fixed the search to be case-insensitive.
+.. The result list is now sorted by the closest name.
+.. The table shows full satellite name instead of the short satellite code.
+- Fixed crash on DM800SE when trying to get Packages list (No Enough Memory).
+- Increased font size and width of some tables.
+- General improvements.
+# ----------------------------------------------------------------
  [v3.2.1  ..  2021-11-18]
 - Improved the Player Controller:
 .. Added info. to the bar (Date, Time, Resoultion, FPS, Remaining Time).
