@@ -1,6 +1,23 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v3.2.4 ..  2021-12-20]
+- You can add IPTV EPG to the System EPG (without sharing the Reference).
+.. Works for M3U and Portal servers (if EPG is supported by the server).
+.. Opening Channel Info. on IPTV service will update the system with the EPG from server.
+.. Added a new option "Update Current Bouquet EPG (from IPTV Server)" to update the system for all the channels in the current bouquet.
+- File Manager can extract ".rar" files.
+- Added two options for the filtered "Unused PIcons" to be moved or deleted.
+.. 1- "Move Unused PIcons to a Directory"
+.. 2- "DELETE Unused PIcons".
+- Improved Player Controller:
+.. Added option to "Stop Current Service".
+.. Added option to "Restart Current Service" (note: for Portal services, refresh with the Green Button).
+.. Added Red button to Pause/Play.
+.. Improved "Pause" to work on IPTV Live TV.
+- IPTV Menu can now be accessed directly from AJPanel Menu in the Channel List Context.
+- Improved reading Portal files to process huge file much faster.
+ # ----------------------------------------------------------------
  [v3.2.2 ..  2021-11-25]
 - Added "AJ Info." option to "Events info menu" and "Event View Context Menu".
 .. This is to access AJPanel-Channel-Info from device default info (Long-Info or Info >> Menu).
