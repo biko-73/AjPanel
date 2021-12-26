@@ -1,6 +1,28 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v3.3.0 ..  2021-12-26]
+- Added option to browse a portal server in M3U mode:
+.. It converts the portal Host/MAC to User/Password, and then opens the server browser.
+.. See the option "Open as M3U" (Green Button) in "IPTV Server Browser (from Portal File)".
+.. Note: Some portals will allow the access but will not stream unless in portal mode.
+- Added Yellow Button to all "Restore" windows (to delete a backup file).
+- Added Yellow Button to Playlist/Portal/M3U files menu (to delete a file).
+- Added new plugins information to Plugins menu:
+.. "Plugins Browser List" : To list the plugins with their connected external menus.
+.. "Plugins Additional Menus" : To list the plugins that are launched at startup.
+- Improved the table for the option "IPTV Server Browser (from Playlists)":
+.. Clearer data in the table with options to sort, export and edit the file.
+.. Added a column to show row number of duplicate URLs.
+- Improved Settings:
+.. Added new option to enable/disable "AJ Info." in "Events Info Menu".
+.. Improved AJPanel menu items in Extension Menu to be enabled/disabled without a restart.
+.. Note: You may experience a crash during the installation restart (just ignore it). This is due to a bug in some images (not handling plugins parameters changes correctly).
+- Removed "AJPanel" and "AJ Live Log (OSCam/NCam)" from Extension Menu.
+- Changed Channel Info EPG Summary and Description colors from Grey to Bright Cyan.
+- Fixed Portal file processing to handle lines that contain "/stalker_portal/c".
+- Fixed a crash (occurs when zapping portal channels from Player very quickly then exiting).
+ # ---------------------------------------------------------------- 
  [v3.2.4 ..  2021-12-20]
 - You can add IPTV EPG to the System EPG (without sharing the Reference).
 .. Works for M3U and Portal servers (if EPG is supported by the server).
