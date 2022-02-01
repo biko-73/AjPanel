@@ -1,6 +1,28 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v4.0.0 ..  2022-02-02]
+- Added Download Manager to download Movies/Series from servers. Some features are:
+.. Direct download and M3U8 Segmented Streams with various resolutions.
+.. Pause/Resume (server dependent).
+.. Multiple downloads can run simultaneously on different servers and on the same server if it allows.
+.. Options to either start the download immediately or add to the list to download it later.
+.. Download from IPTV Server Browser or from bouquets (via Player Bar).
+.. You can add full Series (all Episodes) to download list (and can be downloaded at any time).
+.. Episodes will be downloaded in a separate directory with the Series name.
+.. Progress and download speed are shown during the download.
+- Added Setting Option to "Auto Reset Frozen Live Channels (player dependent)".
+- Added option to the Player Bar menu to get the file size of the current playing movie/series.
+- Added option to Player Bar and File Manager to open the current path location of a local playing movie.
+- Added the Blue Button in the Signal Monitor to switch to the Player Bar.
+- Added "Subt" & "Audio" keys to the Player to open System Subtitle and Audio windows.
+- Added number of "Audio Tracks" and "Subtitles" to the Channel Info.
+- Changed "Exit" key in File Manager to point to the parent directory (instead of jumping to first directory).
+- Improved reading Playlist and Portal files with various encodings.
+- Improved Properties in File Manager to show total/free/used space (for mounts only).
+- Improved Player Pause/Resume Button for some images.
+- Fixed GUI-Restart on OpenATV-7.0 after using "Share Reference with Satellite/C/T Service".
+  # ---------------------------------------------------------------- 
  [v3.3.0 ..  2021-12-26]
 - Added option to browse a portal server in M3U mode:
 .. It converts the portal Host/MAC to User/Password, and then opens the server browser.
