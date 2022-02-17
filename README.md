@@ -1,6 +1,20 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v4.1.0 ..  2022-02-17]
+- Added a new IPTV option to browse channels from M3U/M3U8 files with the following features:
+.. Play a channel from within the table.
+.. Add a group of channels or all channels to bouquets
+.. Download PIcons for a group of channels or all channels.
+.. Files can be opened from IPTV Menu and File Manager.
+- Added "Download Movie Poster" to Download Manager.
+- Added Green Button to Playlist URLs Table to "Download M3U File" from the server.
+- Added "Install Package (force overwrite)" option to packages menu.
+- Improved the option "Remove IPTV Channel Name Prefix (|EN| , |AR|Drama|)" to remove more prefixes.
+- Improved Channel "Info" for Local Recordings to show local poster (if exists)
+- Improved handling of some Portal servers.
+- General improvements and fixes.
+# ------------------------------------------------------------------------------------------------------------
  [v4.0.0 ..  2022-02-02]
 - Added Download Manager to download Movies/Series from servers. Some features are:
 .. Direct download and M3U8 Segmented Streams with various resolutions.
