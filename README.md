@@ -1,6 +1,10 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v4.1.1 ..  2022-02-19]
+- Fixed some issues with some Portal Servers access.
+- More filtering to remove IPTV Channel Name prefix.
+# ------------------------------------------------------------------------------------------------------------
  [v4.1.0 ..  2022-02-17]
 - Added a new IPTV option to browse channels from M3U/M3U8 files with the following features:
 .. Play a channel from within the table.
