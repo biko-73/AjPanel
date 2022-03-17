@@ -1,6 +1,19 @@
 # AjPanel
  Panel Tools 4 enigma2
- 
+
+[v4.2.0 ..  2022-03-17]
+- Added menu option to Player menu to add the playing local movie to the the bouquet "My Movies".
+- Added "Bookmark Server" (Blue Button) to add the current server to favourite list files.
+.. In "IPTV Server Resources", current server will be saved to "Playlist_Bookmarks.txt"
+.. In "Portal Resources", current server will be saved to "Portal_Bookmarks.txt".
+- Improved portal handling for some servers that only work on Windows/Phone software.
+.. Example: Servers with the error "Old firmware, missing metrics or hash. Your device is not supported."
+- Improved reading portal URLs from files to handle more formats.
+.. http://portal.com:80/playlist.m3u?deviceMac=00:1A:79:...
+.. http://portal.com:80/playlist?type=m3u?deviceMac=00:1A:79:...
+- Fixed a crash when trying to download a movie on Dreambox-One (Gemini 4.1) due to missing directory "/home/root/".
+- Fixed Settings "OK" Button not working on OpenPLi-9.0.
+# ------------------------------------------------------------------------------------------------------------ 
  [v4.1.1 ..  2022-02-19]
 - Fixed some issues with some Portal Servers access.
 - More filtering to remove IPTV Channel Name prefix.
