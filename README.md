@@ -1,6 +1,10 @@
 # AjPanel
  Panel Tools 4 enigma2
 
+[v4.2.1 ..  2022-03-18]
+- Fixed the settings Left/Right keys.
+
+# ------------------------------------------------------------------------------------------------------------
 [v4.2.0 ..  2022-03-17]
 - Added menu option to Player menu to add the playing local movie to the the bouquet "My Movies".
 - Added "Bookmark Server" (Blue Button) to add the current server to favourite list files.
