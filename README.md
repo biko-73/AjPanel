@@ -1,9 +1,12 @@
 # AjPanel
  Panel Tools 4 enigma2
 
+[v4.3.0 ..  2022-03-21]
+- Added Multi-Selection option to hide/unhide channels and change the state of Parental Control.
+- Fixed a crash on Vu+ Duo2 (BlackHole 3.1.0) when opening the settings page.
+# ------------------------------------------------------------------------------------------------------------
 [v4.2.1 ..  2022-03-18]
 - Fixed the settings Left/Right keys.
-
 # ------------------------------------------------------------------------------------------------------------
 [v4.2.0 ..  2022-03-17]
 - Added menu option to Player menu to add the playing local movie to the the bouquet "My Movies".
