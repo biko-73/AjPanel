@@ -1,6 +1,26 @@
 # AjPanel
  Panel Tools 4 enigma2
 
+[v5.0.0 ..  2022-04-20]
+- Added Subtitle for Local/Recorded Movies to run srt files.
+.. You can start the subtitle from the Player Bar menu option "Start Subtitle".
+.. If you have a subtitle (srt file) in the same directory, clicking "OK" from the Player Bar will automatically run it.
+.. Once a subtitle starts, it can be started again on the same movie just by clicking "OK" from the Player Bar.
+.. If a subtitle is running, use the Menu key to change the delay, style, encoding, srt file or disable subtitle.
+- Added Multi-Selection option to all IPTV Tables (to add selected services to a bouquet and download selected PIcons).
+- Added Multi-Selection option to "Services (Parental-Control & Hidden)" table (to add selected services to a bouquet.
+- Added "View (Select Encoder)" option to File Manager menu to view files with a specific encoder.
+- Added Auto-Repeat option to the Player Bar (works as long as player bar is showing or hidden).
+- Using Key-0 in the Player Bar will switch to 10 seconds jump (instead of 10 minutes).
+- Improved "Dev. Info." Language/Locale information to show more details.
+- Improved file viewer to align Left/Center/Right with RCU keys "<", "0", ">"
+- Improved viewing "SoftCam.Key" file to look for "SoftCam.Key" and "SoftCam.key" (capital and small-letter "k").
+- Main Fixes (for reported problems):
+.. Fixed Auto-Refreshing on some Portal-Live channels.
+.. Fixed AJPanel Update problem on DM900 with NewNigma2.
+.. Fixed "IPTV Server Browser (from Current Channel)" not working with some portal servers.
+.. Fixed crashes on OpenVision-11.2 (Python-3.10.4) when accessing PIcons, Services options and processing channels with unicode characters.
+# ------------------------------------------------------------------------------------------------------------
 [v4.3.0 ..  2022-03-21]
 - Added Multi-Selection option to hide/unhide channels and change the state of Parental Control.
 - Fixed a crash on Vu+ Duo2 (BlackHole 3.1.0) when opening the settings page.
