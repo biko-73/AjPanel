@@ -1,6 +1,8 @@
 # AjPanel
  Panel Tools 4 enigma2
-
+[v5.0.1 ..  2022-04-23]
+- Fixed the problem of AJPanel not appearing in the Plugins List (reported on DM900).
+# ------------------------------------------------------------------------------------------------------------
 [v5.0.0 ..  2022-04-20]
 - Added Subtitle for Local/Recorded Movies to run srt files.
 .. You can start the subtitle from the Player Bar menu option "Start Subtitle".
