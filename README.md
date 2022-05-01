@@ -1,5 +1,12 @@
 # AjPanel
  Panel Tools 4 enigma2
+[v5.1.0 ..  2022-05-01]
+- Improved portal handling for some servers that only work on Windows software.
+- Ready for the new image "VU+ Update".
+- Fixed the issue of some portals (on Python-3).
+- Improvements and bug fixes.
+
+# ------------------------------------------------------------------------------------------------------------
 [v5.0.1 ..  2022-04-23]
 - Fixed the problem of AJPanel not appearing in the Plugins List (reported on DM900).
 # ------------------------------------------------------------------------------------------------------------
