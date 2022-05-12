@@ -1,11 +1,20 @@
 # AjPanel
  Panel Tools 4 enigma2
+ 
+[v5.2.0 ..  2022-05-12]
+- Improvements and fixes for more Stalker-Portal servers versions (playing and downloading).
+- Improved reading portal lines from files (added more formats).
+- Fixed File Manager "Properties" for some directories with names that include space.
+- Fixed Terminal History on Python-3 where it shows the letter "b" in front of newly added history commands.
+- Fixed picture viewer in File Manager (for DreamBox).
+- Improved IPTV channel name prefix cleaning.
+- General improvements and bug fixes.
+# ------------------------------------------------------------------------------------------------------------
 [v5.1.0 ..  2022-05-01]
 - Improved portal handling for some servers that only work on Windows software.
 - Ready for the new image "VU+ Update".
 - Fixed the issue of some portals (on Python-3).
 - Improvements and bug fixes.
-
 # ------------------------------------------------------------------------------------------------------------
 [v5.0.1 ..  2022-04-23]
 - Fixed the problem of AJPanel not appearing in the Plugins List (reported on DM900).
