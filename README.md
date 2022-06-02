@@ -1,6 +1,17 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+[v5.3.0 ..  2022-06-02]
+- Added "Check & Filter" option to filter accessible portals.
+- Improved the plugin to handle new portal versions.
+- Improved "Info" EPG for Satellite services to show Genre and Parental Rating (if provided by service).
+- Improved "Dev. Info." >> "Disk Usage" to show the File System Type.
+- Improved IPTV channel name prefix cleaning.
+- Renamed IPTV menu option "M3U/M3U8 Channels Browser" to "M3U/M3U8 File Browser".
+- Fixed player bar (sometimes hangs when playing unstable Live portal channels).
+- Fixed copying a directory to another one where same name exists (in File Manager).
+
+# ------------------------------------------------------------------------------------------------------------
 [v5.2.0 ..  2022-05-12]
 - Improvements and fixes for more Stalker-Portal servers versions (playing and downloading).
 - Improved reading portal lines from files (added more formats).
