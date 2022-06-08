@@ -1,168 +1,84 @@
 #!/bin/sh
-# ===================================================
+# ============================================================================================================
 # SCRIPT : DOWNLOAD AND INSTALL AJPANEL
-# ===================================================
-#
 # Command: wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh
-#
-# ===================================================
+# ============================================================================================================
 
-# ------------------------------------------------------------------------------------------------------------
-# Package Type
-# ------------------------------------------------------------------------------------------------------------
-# Mode:
-#	0 = Auto	... IPK or DEB (depending on system)
-#	1 = ipk		... Example : enigma2-plugin-extensions-ajpanel_v2.4.1_all.ipk
-#	2 = deb		... Example : enigma2-plugin-extensions-ajpanel_v2.4.1_all.deb
-#	3 = tar.gz	... Example : AJPanel_v2.3.0.tar.gz
-AJP_INSTALL_TYPE=0										# File to download/install
-
-# ------------------------------------------------------------------------------------------------------------
-# Server Parameters
-# ------------------------------------------------------------------------------------------------------------
-AJP_URL="https://raw.githubusercontent.com/biko-73/AjPanel/main/"		                                # Custom URL
-VER_FILE_NAME='version'									        # Version File Name on Server
+AJP_URL="https://raw.githubusercontent.com/biko-73/AjPanel/main/"
+VER_FILE_NAME='version'	
 
 
+SEP="********************************************************************"
+echo -e "\n$SEP"
+echo "**                                                                **"
+echo "**                      AJPanel Installation                      **"
+echo "**                                                                **"
+echo "**                      Uploaded by: Biko_73                      **"
+echo "**  Support: https://www.tunisia-sat.com/forums/threads/4165512/  **"
+echo "**                                                                **"
+echo -e "$SEP\n"
 
-# ------------------------------------------------------------------------------------------------------------
-# Check Version
-# ------------------------------------------------------------------------------------------------------------
-# Download "version" file to /tmp/version
-echo ''
-echo '***************************************************'
-echo '**              AJPanel Installation              *'
-echo '***************************************************'
-echo ''
+
 echo 'Checking Server Version ...'
 AJP_VER_TMP="/tmp/"$VER_FILE_NAME
 rm -f $AJP_VER_TMP > /dev/null 2>&1
-wget -q -T 2 $AJP_URL$VER_FILE_NAME -P "/tmp/"
+wget --no-check-certificate -q -T 2 -O "/tmp/"$VER_FILE_NAME $AJP_URL$VER_FILE_NAME
 
-# ------------------------------------------------------------------------------------------------------------
-# Download/Install
-# ------------------------------------------------------------------------------------------------------------
+
+RES=1
 if [ -f $AJP_VER_TMP ]; then
 
-	# --------------------------------------------
-	# Get version from "/tmp/version" file
-	# --------------------------------------------
 	AJP_VERSION=$(cat $AJP_VER_TMP | grep version);
 	AJP_VERSION=$(cut -d "=" -f2- <<< "$AJP_VERSION");
-
-	# Del "/tmp/version"
 	rm -f $AJP_VER_TMP > /dev/null 2>&1
 
-	# Check Version
+
 	if [ -z "$AJP_VERSION" ]; then
-		echo ''
-		echo 'Installation failed (cannot read version from "version" file) !'
+		echo -e '.... Installation failed ! Cannot read version ....\n'
 	else
-		# Version
 		AJP_VERSION="v"$AJP_VERSION
+		echo -e '... Found AJPanel '$AJP_VERSION'\n'
 
-		# --------------------------------------------
-		# Package File Name
-		# --------------------------------------------
-		AJP_IPK="enigma2-plugin-extensions-ajpanel_"$AJP_VERSION"_all.ipk"	# E.g. : enigma2-plugin-extensions-ajpanel_v2.3.0_all.ipk
-		AJP_DEB="enigma2-plugin-extensions-ajpanel_"$AJP_VERSION"_all.deb"	# E.g. : enigma2-plugin-extensions-ajpanel_v2.3.0_all.deb
-		AJP_TAR="AJPanel_"$AJP_VERSION".tar.gz"								# E.g. : AJPanel_v2.3.0.tar.gz
 
-		if [ $AJP_INSTALL_TYPE = 0 ]; then
-			if which dpkg > /dev/null 2>&1; then
-				AJP_FILE=$AJP_DEB
-			else
-				AJP_FILE=$AJP_IPK
-			fi
-		elif [ $AJP_INSTALL_TYPE = 1 ]; then
-			AJP_FILE=$AJP_IPK
-		elif [ $AJP_INSTALL_TYPE = 2 ]; then
-			AJP_FILE=$AJP_DEB
-		else
-			AJP_FILE="AJPanel_"$AJP_VERSION".tar.gz"
-		fi
+		if which dpkg > /dev/null 2>&1; then EXT="deb"; else EXT="ipk"; fi
+		AJP_FILE="enigma2-plugin-extensions-ajpanel_"$AJP_VERSION"_all."$EXT
 
-		# --------------------------------------------
-		# Download ipk file
-		# --------------------------------------------
-		echo "Downloading AJPanel $AJP_VERSION ($AJP_FILE)..."
 
-		# Remove previous files (if any)
-		rm -f /tmp/*ajpanel*.ipk /tmp/*ajpanel*.deb /tmp/*ajpanel*.tar.gz > /dev/null 2>&1
-
-		# Download
-		wget -q -T 2 $AJP_URL$AJP_FILE -P "/tmp/"		# Quiet mode
-		#wget -T 2 $AJP_URL$AJP_FILE -P "/tmp/"			# Shows download details
-
-		# --------------------------------------------
-		# Install
-		# --------------------------------------------
+		echo "Downloading AJPanel $AJP_VERSION ($AJP_FILE) ..."
 		AJP_PKG_FILE="/tmp/"$AJP_FILE
+		wget --no-check-certificate -q -T 2 -O $AJP_PKG_FILE $AJP_URL$AJP_FILE
+
+
 		if [ -f $AJP_PKG_FILE ]; then
-			# --------------------------------------------
-			# Remove older versions (ajpan/ajpanel)
-			# --------------------------------------------
-			# remove old version
+			echo -e ".... Download success.\n\nStarting installation ..."
 			if which dpkg > /dev/null 2>&1; then
-				dpkg --purge --force-all enigma2-plugin-extensions-ajpanel > /dev/null 2>&1
-				dpkg --purge --force-all enigma2-plugin-extensions-ajpan > /dev/null 2>&1
+				apt-get --reinstall install $AJP_PKG_FILE -y
+				if ! [ $? -eq 0 ]; then echo -e ".... Method-1 failed ....\n"; apt-get --reinstall -f install $AJP_PKG_FILE -y; fi
+				if ! [ $? -eq 0 ]; then echo -e ".... Method-2 failed ....\n"; apt-get -f install -y --no-install-recommends $AJP_PKG_FILE; fi
+				if ! [ $? -eq 0 ]; then echo -e ".... Method-3 failed ....\n"; apt-get update; dpkg -i --force-overwrite $AJP_PKG_FILE -y; apt-get install -f -y; fi
+				RES=$?
+				if ! [ $RES -eq 0 ]; then echo -e ".... Method-4 failed ....\n"; fi
 			else
-				opkg remove --force-remove enigma2-plugin-extensions-ajpan > /dev/null 2>&1
-				opkg remove --force-remove enigma2-plugin-extensions-ajp > /dev/null 2>&1
+				opkg install --force-overwrite $AJP_PKG_FILE
+				if ! [ $? -eq 0 ]; then echo -e ".... Method-1 failed ....\n"; opkg install --force-reinstall $AJP_PKG_FILE; fi
+				RES=$?
+				if ! [ $RES -eq 0 ]; then echo -e ".... Method-2 failed ....\n"; fi
 			fi
-
-			# Clean up
-			rm -rf '/usr/lib/enigma2/python/Plugins/Extensions/AJPan'  > /dev/null 2>&1
-			rm -rf './usr/lib/enigma2/python/Plugins/Extensions/AJPan' > /dev/null 2>&1
-			rm -rf '/usr/lib/enigma2/python/Plugins/Extensions/AJPanel'  > /dev/null 2>&1
-			rm -rf './usr/lib/enigma2/python/Plugins/Extensions/AJPanel' > /dev/null 2>&1
-
-			echo ""
-			echo "***********************************************************************"
-			echo "**                                                                    *"
-			echo "**                       AJPanel    : $AJP_VERSION                          *"
-			echo "**                       Uploaded by: Biko_73                         *"
-			echo "**  Support    : https://www.tunisia-sat.com/forums/threads/4165512/  *"
-			echo "**                                                                    *"
-			echo "***********************************************************************"
-			echo ""
-
-			# ------------------------------------------------------------------------
-			# Install new version (ajpanel)
-			# ------------------------------------------------------------------------
-			if [ $AJP_INSTALL_TYPE = 0 ]; then
-				if which dpkg > /dev/null 2>&1; then
-					apt-get install --reinstall $AJP_PKG_FILE -y			#dpkg -i --force-overwrite $AJP_PKG_FILE
-				else
-					#opkg install --force-reinstall $AJP_PKG_FILE
-					opkg install --force-overwrite $AJP_PKG_FILE
-				fi
-			elif [ $AJP_INSTALL_TYPE = 1 ]; then
-				opkg install --force-reinstall $AJP_PKG_FILE
-			elif [ $AJP_INSTALL_TYPE = 2 ]; then
-				apt-get install --reinstall $AJP_PKG_FILE -y				#dpkg -i --force-overwrite $AJP_PKG_FILE
-			else
-				AJP_FILE="AJPanel_"$AJP_VERSION".tar.gz"
-			fi
-
-			# Remove Installation file
-			rm -f /tmp/*ajpanel*.ipk /tmp/*ajpanel*.deb /tmp/*ajpanel*.tar.gz > /dev/null 2>&1
-
-			# Finishing Note
-			echo ""
-			echo '***************************************************'
-			echo '**                    FINISHED                    *'
-			echo '***************************************************'
-			echo ""
+			rm -f $AJP_PKG_FILE > /dev/null 2>&1
 		else
-			echo ''
-			echo "Installation failed (download problem) !"
+			echo -e ".... Cannot download "$AJP_FILE"\n"
 		fi
 	fi
 else
-	echo ''
-	echo "Installation failed (cannot get version file from server) !"
-	exit 1
+	echo ".... Cannot get version file from server !"
 fi
 
-# ------------------------------------------------------------------------------------------------------------
+
+if [ $RES -eq 0 ]; then
+	echo -e "\n$SEP\n**               SUCCESSFUL ... Will restart soon ...             **\n$SEP\n"
+	if which systemctl > /dev/null 2>&1; then sleep 4; systemctl restart enigma2; else init 4; sleep 4; init 3; fi
+	exit 0
+else
+	echo -e "\n$SEP\n**                      INSTALLATION FAILED                       **\n$SEP\n"
+	exit 1
+fi
