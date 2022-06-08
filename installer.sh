@@ -56,7 +56,6 @@ if [ -f $AJP_VER_TMP ]; then
 			if which dpkg > /dev/null 2>&1; then
 				apt-get update && dpkg -i --force-overwrite $AJP_PKG_FILE; apt-get install -f -y
 				RES=$?
-				if ! [ $RES -eq 0 ]; then echo -e ".... Method-4 failed ....\n"; fi
 			else
 				opkg install --force-overwrite $AJP_PKG_FILE			# "--force-reinstall" was not OK on OpenBH v5 (Python-3)
 				if ! [ $? -eq 0 ]; then echo -e ".... Method-1 failed ....\n"; opkg install --force-reinstall $AJP_PKG_FILE; fi
