@@ -1,6 +1,14 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v5.4.0 ..  2022-06-14]
+- Added Subtitle to run ".srt" files for Satellite channels and IPTV movies/series.
+- Added support for more Stalker-Portal servers versions.
+- Added new option to export services to xml file (export a bouquet or all Satellite/Cable/Terrestrial).
+- Fixed refreshing of frozen Live Channels (for servers from Playlists).
+- Fixed Series Episodes names prefix filtering.
+- Added file name to title (when browsing URLs for Playlist/Portal files).
+# ------------------------------------------------------------------------------------------------------------
 [v5.3.0 ..  2022-06-02]
 - Added "Check & Filter" option to filter accessible portals.
 - Improved the plugin to handle new portal versions.
@@ -10,7 +18,6 @@
 - Renamed IPTV menu option "M3U/M3U8 Channels Browser" to "M3U/M3U8 File Browser".
 - Fixed player bar (sometimes hangs when playing unstable Live portal channels).
 - Fixed copying a directory to another one where same name exists (in File Manager).
-
 # ------------------------------------------------------------------------------------------------------------
 [v5.2.0 ..  2022-05-12]
 - Improvements and fixes for more Stalker-Portal servers versions (playing and downloading).
