@@ -1,6 +1,9 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v5.4.1 ..  2022-06-15]
+- Fixed the crash that occurs when zapping portal channels (reported on OpenPLi-8.2).
+# ------------------------------------------------------------------------------------------------------------
  [v5.4.0 ..  2022-06-14]
 - Added Subtitle to run ".srt" files for Satellite channels and IPTV movies/series.
 - Added support for more Stalker-Portal servers versions.
