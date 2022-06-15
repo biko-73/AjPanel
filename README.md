@@ -1,6 +1,12 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v5.4.2 ..  2022-06-16]
+- Improved the new option 'Export Services to "channels.xml"' to produce a sorted list.
+- Fixed IPTV Option "M3U/M3U8 File Browser" which was not shown if there is no Local IPTV service.
+- Fixed the crash that occurs when using "Info" function.
+- Fixed the crashes caused by Component changes in the latest versions of OpenATV-7.0.
+# ------------------------------------------------------------------------------------------------------------
  [v5.4.1 ..  2022-06-15]
 - Fixed the crash that occurs when zapping portal channels (reported on OpenPLi-8.2).
 # ------------------------------------------------------------------------------------------------------------
