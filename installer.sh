@@ -54,7 +54,7 @@ if [ -f $AJP_VER_TMP ]; then
 		if [ -f $AJP_PKG_FILE ]; then
 			echo -e ".... Download success.\n\nStarting installation ..."
 			if which dpkg > /dev/null 2>&1; then
-				dpkg -i --force-overwrite $AJP_PKG_FILE -y
+				dpkg -i --force-overwrite $AJP_PKG_FILE
 				RES=$?
 			else
 				opkg install --force-overwrite $AJP_PKG_FILE			# "--force-reinstall" was not OK on OpenBH v5 (Python-3)
