@@ -1,6 +1,31 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v5.5.0 ..  2022-06-26]
+- Enabled Player Bar "Refresh" (Green Button) for all types of services.
+.. Refreshing a movie/series should restore the last playing position (server dependent).
+.. Note: The Menu option "Restart Current Service" resets the service without restoring the movie/series position.
+- Added a simple Download Monitor to show brief download info on top left of the screen (even outside AJPanel).
+.. It can be enabled/disabled from Download Manager options (Yellow Button).
+- Improved the Settings option "IPTV Hosts Files Path (Playlist, Portal, M3U)" to have more than one custom directory.
+.. This should fix the search slownes on devices with external media, multi-boot (with huge number of files).
+.. You can edit your favourite search-paths list (for Playlist/Portal/Stalker/M3u/M3u8 files).
+- Changed Hotkey access to AJPanel to always open the Player Bar.
+.. This is for faster access to options like Subtitle/IPTV/Download Manager, etc.
+.. The Signal Monitor can also be opened from the bar menu (or from within AJPanel).
+- Improved Subtitle handling.
+.. Fixed system subtitle not showing after refreshing a service.
+.. Added Subtitle background (black with transparency level selection).
+.. Added menu to subtitle settings to reset the delay to 0 (faster reset if delay is far from 0).
+.. Increased maximum Subtitle Font Size (from 80 to 100)
+.. Increased maximum Subtitle Delay seconds (from 60 to 300)
+- Added a menu to Text Viewing Window with option to Enable/Disable Wrapping, Align (Left/Right/Center) and Save to File.
+- Improved filtering of IPTV channel name prefixes to include more patterns.
+- Improved reading server data form Playlist/Portal files with non-ASCII characters.
+- Fixed AJPanel update from Settings (for Debian system).
+- Fixed the crash that occurs when "lamedb" file is not in "UTF-8" Encoding.
+- Fixed the crash that occurs when trying to find a service from Channel Context Menu.
+# ------------------------------------------------------------------------------------------------------------
  [v5.4.2 ..  2022-06-16]
 - Improved the new option 'Export Services to "channels.xml"' to produce a sorted list.
 - Fixed IPTV Option "M3U/M3U8 File Browser" which was not shown if there is no Local IPTV service.
