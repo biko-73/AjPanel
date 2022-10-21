@@ -1,6 +1,171 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v7.4.0 .. 2022-10-21]
+- Added Font Previw to font selector.
+- Added screenshot:
+.. All screen contents can be captured with the keys : F1 , Long-Tv , Long-Tv/Radio.
+.. Video contents can be captured with the keys : F2 , Long-Radio , Long-0 : .
+.. OSD contents can be captured with the keys : F3 , Long-Help : Screenshot of video part.
+.. The screeshot service can be switched off from settings.
+.. The image type can also be changed to jpg/png/bmp.
+.. The result files witll be saved in your Export-Path.
+- Improved File Manager Picture Viewer to browse the picutre files in the same directory with Left/Right and Up/Down keys.
+- Improved "Sat. List" (Yellow Button) in the option "Restore Tuner Settings" (to show the satellites in separate lines).
+- Fixed empty screens (or incorrect text viewer height) on VTi and some DreamOS images.
+- Fixed a crash casued when clicking "Info" after searching in IPTV >> Series with "Find in Series".
+- Fixed some issues with the panel update/resinstall for DreamOS.
+
+# ------------------------------------------------------------------------------------------------------------
+[v7.3.0 .. 2022-10-11]
+- Fixed IPTV Poster/PIcons Browser (not showing the images on Pure2-6.5/OpenATV-6.4 which have problems with jpg files).
+- Fixed a crash caused by browsing M3U8 file from File Manager (with the option "Browse IPTV Channels").
+- Improved adding favourite server to IPTV Menu to apply the change without exiting to main page.
+- Imporved IPTV prefix removal for more new cases.
+- Minor changes/fixes/imporvements.
+
+# ------------------------------------------------------------------------------------------------------------
+[v7.2.0 .. 2022-10-06]
+- Added options in Main Page menu to change the fonts for the System/AJPanel/Terminal.
+.. This offer the fonts from "/usr/share/fonts/" where you can add otf/ttf fonts.
+.. Changing the fonts take place immediately (no restarts required).
+.. The only case you need a restart is when you want to return the system fonts to their defaults.
+- Added IPTV Browser (with PIcons/Posters).
+- Added IPTV option to add favourite Playlist/Portal server to IPTV menu (for easy access).
+- Added separate options to open the Player Bar and Signal Monitor (as alternative access for images with no Hotkeys).
+.. The options are available in "Services/Channels" page and system "Extensions menu".
+- Improved Subtitle:
+.. The option "Suggest srt files" is now faster and with better sensitivity.
+.. Add functionality to remove Arabic Diacritics (Tashkeel) to prevent gaps between the letters.
+.. Added RCU keys to control a playing movie (Pause, Play, Audio, SUBT, Forward, Rewind).
+.. Added Left/Right keys to synchronize the subtitle (to jump back and forth in lines).
+.. Added "OK" Button to subtitle settings to show a menu with values for each setting item.
+.. Improved Subtitle Line Picker (Blue Button) to highlight the current line.
+.. Improved Font selector to offer the fonts from "/usr/share/fonts/" where you can add otf/ttf fonts (no restarts required).
+.. Fixed Subtitle layout for HD-Skins.
+- Improved PIcons Manager to be able to change PIcons background transparency color.
+- Added options to File Manager to view MVI files + Convert jpg/png to mvi (for bootlogo).
+- Improved Tables: Added "Edit Filter" (Yellow Button) to Find-in-Table to be able to edit the filter file in all tables.
+- Improved IPTV prefix removal (for more new cases).
+- Fixed the issues with toggling the Readers State (ON/OFF) for the original and patched OSCam variants.
+- Fixed a crash during Channels Backup (caused by Unicode characters in the names of bouquets files).
+# ------------------------------------------------------------------------------------------------------------
+[v7.1.0 .. 2022-09-20]
+- Introduced a totally new subtitle handler with more features.
+.. New settings menu layout.
+.. Info Button show details of current subtitle.
+.. Blue Button lets you select the current translation line.
+- Added the new option "Copy EPG/PIcons between Channels (from xml file)".
+.. This will copy PIcons/EPG between all types of channels (IPTV/DVB-S/C/T).
+- Added the new option "Share Reference with DVB Channels (from xml file)".
+.. This will change the references for a group of IPTV channels to references from DVB channels.
+.. Result: IPTV channels will use the PIcons and the updated EPG from DVB channels.
+- Improved SoftCam menu.
+.. Added option to convert "/etc/CCcam.cfg" to OSCam/NCam Readers.
+.. Improved handling of modified OSCam/NCam variants.
+.. Improved SoftCam Live Log text coloring.
+- Improved IPK/DEB creator to prevent overwriting the custom "postinst" file (if exists).
+- Fixed menu crash when opening IPK/DEB creator.
+- Fixed PIcons page filter crash (Blue Button).
+- Fixed Player "Stop Current Service" not working on DreamOS with original image.
+- Fixed AJPanel update from the Settings (for DEB System).
+# ------------------------------------------------------------------------------------------------------------
+[v7.0.0 .. 2022-09-01]
+- Added "Bouquets Importer" to import bouquets from backup files (.tar.gz) or any zip files (with settings files).
+- Added the new option "Delete Empty Bouquets" to delete empty bouquets (including those with Markers only).
+- Improved File Manager:
+.. Added option to "Convert .zip to .tar.gz".
+.. Added option to "Convert .tar.gz to .zip".
+.. Added option to convert text files Line-Breaks to Unix/Linux format.
+.. Added option to to archive/compress individual files.
+.. Improved "Add all Media in Directory to a Bouquet" to sort the list before adding it to bouquets.
+.. Fixed the problem of not listing "Internal Flash" if running from external image (on Multi-Boot).
+.. Fixed tar Archive/Extract errors when dealing with directories/files names with spaces.
+.. Improved Sort options.
+- Improved Download Manager:
+.. Added the option "Open in File Manager" to Download Manager menu (to open the File Manager with the selected file).
+.. Fixed file extension for downloaded movies appearing as ".php" on one of portal servers.
+- Added "Satellites Services Cleaner" to remove all services related to selected satellite/s.
+- Added the new option "Invalid Services Cleaner" to remove services not referenced by Tuner Configuration.
+- Rearranged "Services/Channels" menu and added a sub-menu for more tables.
+- Improved Player Bar:
+.. Added "TEXT" Button to Player Bar as a shortcut to "Start Subtitle".
+.. Added Red Button to Player as a shortcut to open the Signal Monitor.
+.. Improved subtitle to stop when zapping channels from Player.
+.. Fixed Player crash when using the hotkey while subtitle is running.
+- Improved IPTV handling:
+.. Added the option "Find in Selected" (Blue Button) to search for names in Playlist VOD/Series within a Category.
+.. Added filter to "M3U/M3U8 File Browser".
+.. Added a column to IPTV Servers tables to show the availability of PIcons in the server.
+.. Added a column to Playlist (Live) tables to show the availability of "Catch-up" services.
+.. Improved portal Zap in bouquets to ensure moving the cursor in the Channels List to the right name.
+.. Improved Unicode names handling for IPTV channels on OpenVision v12 r458.
+- Improved Terminal to point to the last used command in the Custom Commands Table.
+- Improved "Restoring Channels" to validate the backup tar files and delete all old files before restoring.
+- Improved "Date/Time" (manual mode) to show current Date/Time.
+- Fixed a crash on Dream-Two caused by missing python command when changing text wrapping.
+- Fixed the problem of AJPanel disappearing from Plugins list due to missing library "difflib" (for Vu Solo with BlackHole v3.1.0).
+# ------------------------------------------------------------------------------------------------------------
+[v6.0.0 .. 2022-08-01]
+- Added the option "Find in Selected" (Blue Button) to search for names in Portal VOD/Series within a Category.
+- Added a new column ("Category/Genre") in Portal Live/VOD/Series tables.
+- Added option to download the M3U file from portal servers.
+- Added Find/Next/Prev menu options to all the tables in the panel to search for text in table rows.
+.. After entering the text that you need to find, use "<" and ">" buttons as shortcuts for Next/Previous.
+.. You can also search for word from your custom filter file (see filter rules).
+- Added the new option "satellites.xml (Statistics)" to Services/Channels Tools (to analyse satellites.xml file).
+- Added more methods to Subtitle menu to search for local .srt files. The new menu will now show:
+.. Manual Search (with File Manager)
+.. Suggest srt files (25% similar)
+.. Suggest srt files (50% similar)
+.. Suggest srt files (75% similar)
+.. Find srt Files (in all directories)
+.. Find srt Files (in Current Directory)
+- Added a new Setting item to change the action for the Exit button in File Manager.
+- Added new options to File Manager to save text files with different file encoding.
+- Added new option to File Manager Yellow Button ("More options"):
+.. Added Sort-Options to sort contents by Name/Date/Type.
+.. Added Find-Files (supports Pattern Matching Search).
+- Added the option "Open in File Manager" (Blue Button) to some Plugins Tables to open the plugin path in File Manager.
+- Added new options to the File Manager to add media files to bouquets. The options appear if the cursor is on a media file.
+.. The new options "Add Media File to a Bouquet" will add the selected media file to a bouquet.
+.. The new options "Add all Media in Directory to a Bouquet" will add all the media file from current directory to a bouquet.
+.. If a jpg/png poster file exists (with the same name as the media file), a PIcon will be added.
+- Added new option to PIcons Tools to export a list of all files (or filtered files) to a text file.
+- Improved PIcons Tools Statistics function to include Service Type details (in a table).
+- Added new filters to PIcons Tools:
+.. To filter PIcons files by date (Today/Yesterday/Last-7-Days).
+.. To filter PIcons files by Service Type.
+- Added IPTV menu option "Update Current Bouquet PIcons (from IPTV Server)".
+- Added new filter to Local IPTV Table to filter refCodes "x:x:x:x:0:0:0:0:0:0:".
+- Added new IPTV option to change Reference Type for a bouquet.
+.. See: 'Change Bouquet Ref. Types to (1/4097/5001/5002/8192/8193) ..'.
+- Added Filter-in-Filter to "Local IPTV Services" and "Services/Channels" table.
+.. The OK button filters the main list whereas the Green Button filters the filtered list.
+- Improved changing Reference Type (1/4097/5001/5002/8192/8193) to rename PIcons files as well.
+- Improved filtering of IPTV channel name prefixes to include more patterns.
+- Improved Subtitle vertical position to move up more.
+- Improved subtitle list table to show separated paths/files to locate files easier.
+- Fixed Subtitle Alignment not moving to Left/Right.
+- Improved File Editor to search in editor + option go to line number.
+- Improved Player Bar to show PIcon and transmission information for DVB-S/C/T services.
+- Improved Player Bar option "Add to Bouquet" to select the bouquet from existing list or add to a new bouquet.
+- Improved Player Bar to change color depending on the playing service:
+.. Dark Blue >> DVB (Satellite/Cable/Terrestrial).
+.. Dark Red >> Local Media.
+.. Green >> Playlist.
+.. Purple or Dark Purple >> Portal Servers (server version dependent).
+- Improved the names of backup files created by the panel to include Enigma2 Image Name.
+- Improved Multi-Select to move cursor down when selecting a row with OK.
+- Fixed some issues with disabling active subtitle (including crashes).
+- Fixed download failure on some portal servers.
+- Removed my Built-in Input method.
+- Improved all bouquet list menus to include Radio Bouquets.
+- Added Home/End Keyboard buttons to jump to First/Last rows in tables (for attached keyboards).
+- Moved some IPTV menu items to the new sub-menu "Reference Tools"
+- Added IPTV menu option "Reload Channels and Bouquets". This is the same option as in "Channels/Services" menu.
+- General improvements and bug fixes.
+# ------------------------------------------------------------------------------------------------------------ 
  [v5.5.0 ..  2022-06-26]
 - Enabled Player Bar "Refresh" (Green Button) for all types of services.
 .. Refreshing a movie/series should restore the last playing position (server dependent).
