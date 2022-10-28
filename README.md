@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Algerian&size=30&pause=1000&color=206F92EE&width=435&lines=AjPanel;Panel+Tools+4+enigma2;About)](https://git.io/typing-svg)
 
-https://img.shields.io/badge/Ajpanel-Version-blue/badge/custom-badge-blue.svg??logo=paintbrush&logoColor=white
+https://img.shields.io/badge/Ajpanel-Version-blue/badge/custom-badge-blue.svg?logo=paintbrush&logoColor=white
 
 
  [v7.4.0 .. 2022-10-21]
