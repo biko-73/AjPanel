@@ -2,7 +2,7 @@
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Algerian&size=30&pause=1000&color=374159&width=435&lines=AjPanel;Panel+Tools+4+enigma2;Readme)
 
-![GitHub Streak](https://streak-stats.demolab.com?user=biko-73&theme=prussian)
+![GitHub Streak](https://streak-stats.demolab.com?user=biko_73&theme=prussian&background=374159&dates=C7D1E3&currStreakNum=0074FF&sideLabels=84ADC4)
 
  [v7.4.0 .. 2022-10-21]
 - Added Font Previw to font selector.
