@@ -6,6 +6,8 @@
 
 ![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=biko-73&theme=react)
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=biko-73&show_icons=true&theme=transparent)
+
  [v7.4.0 .. 2022-10-21]
 - Added Font Previw to font selector.
 - Added screenshot:
