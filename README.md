@@ -8,6 +8,8 @@
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=biko-73&show_icons=true&theme=transparent)
 
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=biko-73&repo=github-readme-stats)
+
  [v7.4.0 .. 2022-10-21]
 - Added Font Previw to font selector.
 - Added screenshot:
