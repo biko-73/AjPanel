@@ -2,6 +2,8 @@
 
 <img src="https://i.ibb.co/hB2f65n/iconhd.png" alt="iconhd" border="0">
 
+![](https://komarev.com/ghpvc/?username=biko-73)
+
  [v7.4.0 .. 2022-10-21]
 - Added Font Previw to font selector.
 - Added screenshot:
