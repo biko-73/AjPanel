@@ -1,7 +1,5 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Algerian&size=30&pause=1000&color=206F92EE&width=435&lines=AjPanel;Panel+Tools+4+enigma2;About)](https://git.io/typing-svg)
 
-https://camo.githubusercontent.com/2c8004ff4e17386f94058e68caf610024348ce4b1b6780ff77640ae0e864915e/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d6d616a69647464656e69363636
-
 
  [v7.4.0 .. 2022-10-21]
 - Added Font Previw to font selector.
