@@ -2,12 +2,6 @@
 
 <img src="https://i.ibb.co/hB2f65n/iconhd.png" alt="iconhd" border="0">
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=biko-73&show_icons=true&theme=transparent)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=biko-73&theme=prussian&background=374159&dates=C7D1E3&currStreakNum=0074FF&sideLabels=84ADC4)
-
-![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=biko-73&theme=react)
-
  [v7.4.0 .. 2022-10-21]
 - Added Font Previw to font selector.
 - Added screenshot:
