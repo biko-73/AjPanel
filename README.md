@@ -1,4 +1,4 @@
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Algerian&size=30&pause=1000&color=374159&width=435&lines=AjPanel;Panel+Tools+4+enigma2;About)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Algerian&size=30&pause=1000&color=374159&width=435&lines=AjPanel;Panel+Tools+4+enigma2;Readme+Version as Followed)
 
 ![GitHub Streak](https://streak-stats.demolab.com/?user=biko-73&theme=dark)
 
