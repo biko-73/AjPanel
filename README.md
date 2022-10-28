@@ -1,8 +1,8 @@
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Algerian&size=30&pause=1000&color=374159&width=435&lines=AjPanel;Panel+Tools+4+enigma2;Readme)
+
 <img src="https://i.ibb.co/hB2f65n/iconhd.png" alt="iconhd" border="0">
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=biko-73&show_icons=true&theme=transparent)
-
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Algerian&size=30&pause=1000&color=374159&width=435&lines=AjPanel;Panel+Tools+4+enigma2;Readme)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=biko-73&theme=prussian&background=374159&dates=C7D1E3&currStreakNum=0074FF&sideLabels=84ADC4)
 
