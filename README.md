@@ -19,7 +19,7 @@
 - Fixed a crash casued when clicking "Info" after searching in IPTV >> Series with "Find in Series".
 - Fixed some issues with the panel update/resinstall for DreamOS.
 
-# ------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------
 [v7.3.0 .. 2022-10-11]
 - Fixed IPTV Poster/PIcons Browser (not showing the images on Pure2-6.5/OpenATV-6.4 which have problems with jpg files).
 - Fixed a crash caused by browsing M3U8 file from File Manager (with the option "Browse IPTV Channels").
