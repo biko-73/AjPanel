@@ -1,6 +1,43 @@
 # AjPanel
  Panel Tools 4 enigma2
  
+ [v8.0.0 .. 2022-12-01]
+- Added "Movies Browser" to main page. It read the movies from the directory set in the Settings (+ all its sub-directories).
+- Added "EPG" option to main page. The option is also available in Channel List Context Menu >> AJPanel - Channels Tools.
+- Added EPG Translation (experimental). This feature works fine on OpenPLi-8.3. However, some images may reset the EPG after restarts.
+- Added feature to AJPanel Channel Info to translate the EPG part (based on the EPG Translation Language settings).
+- Added multi-select feature to Terminal to run multiple commands.
+- Added the option "Replay with" to Player Bar to replay the media with a different media-player.
+- File Manager.
+.. Added the option "Set as PIcon for current channel" to convert a picture file to PIcon.
+.. Added the option "Play with" to select the player of the selected media file.
+.. Added capability to play recorded IPTV stream (file extension ".stream").
+.. Added Encoding Review (when viewing or changing file encoding).
+.. Added menu options shortcuts to some common options.
+.. Improved Picture Viewer to move the cursor to the last viewed file.
+.. Added "Info" Button to Picture Viewer to show file properties.
+- IPTV:
+.. Improved access to old versions of Portal Servers.
+.. Added option to IPTV options to save to bouquet name with provider name.
+.. Added new filter to Local IPTV table (to filter Stream-Relay channels).
+.. Improved IPTV main server page to show the current host by clicking the "Info" Button.
+.. Improved M3U/M3U8 Browser for more m3u8 file formats.
+.. Fixed "M3U/M3U8 File Browser" zap showing incorrect channel name in Player-Bar.
+- Main Page:
+.. Moved the option "Check Internet Connection" to Main page menu.
+.. Added "AJPanel Requirements" option to Main page menu to check/install the packages required by some features in AJPanel.
+.. Added "Help" option to Main page menu to list the shortcuts keys used in the page.
+.. Added shortcuts to access all options in Main page with digis 1-9 and "<" ">". See details in Menu >> Keys Help.
+- Added the option "Delete File" (Yellow Button) to "Bouquets Importer".
+- Added a feature to all menus/options to jump to the row with a letter typed by RCU.
+- Improved settings to use OK Button to show a menu with the available options (for easy selection).
+- Improved AJPanel Settings Import ("Restore AJPanel Settings").
+- Added ScrollBar to PIcons and Posters Browsers.
+- Improved PIcons and Posters Browsers to hide the empty boxes.
+- Fixed AJPanel installation GUI Restart command for Egami (in "postinst").
+- Fixed Restore-Tuner for VTi (freezing after GUI Restart).
+
+# ------------------------------------------------------------------------------------------------------------
  [v7.4.0 .. 2022-10-21]
 - Added Font Previw to font selector.
 - Added screenshot:
