@@ -70,14 +70,14 @@ if [ -f $MY_TMP_FILE ]; then
 	if [ $MY_RESULT -eq 0 ]; then
 		echo "   >>>>   SUCCESSFULLY INSTALLED   <<<<"
 		echo ''
-		echo "   >>>>         RESTARING         <<<<"
-		if which systemctl > /dev/null 2>&1; then
-			sleep 2; systemctl restart enigma2
-		else
-			init 4
-			sleep 4 > /dev/null 2>&1
-			init 3
-		fi
+		#echo "   >>>>         RESTARING         <<<<"
+		#if which systemctl > /dev/null 2>&1; then
+		#sleep 2; systemctl restart enigma2
+		#else
+		#init 4
+		#sleep 4 > /dev/null 2>&1
+		#init 3
+		#fi
 	else
 		echo "   >>>>   INSTALLATION FAILED !   <<<<"
 	fi;
