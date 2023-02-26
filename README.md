@@ -7,7 +7,120 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
- 
+
+# ------------------------------------------------------------------------------------------------------------
+[v8.6.0 .. 2023-02-26]
+- Added "Package Creator" in Plugins page to create ipk/deb/tar.gz packages from a custom project file.
+.. This creates a project directory & project with everything you needed to create ipk/deb/tar.gz packages.
+.. Once the project is created, start collecting the paths of the directories/files need in the include.
+.. Adding a directoring to the project will automatically add all its contents when creating the package.
+.. The control parameters for ipk/deb packages are initially added added from a template.
+.. You can copy the control parameters from any installed packages.
+.. You can import your custom control script files into the project directory (using the menu).
+.. The menu will help you pick the Dependencies from a list. Removing a dependancy is also possible.
+.. Pre and Post actions like Restart/Reboot can also be set.
+.. Note: This can be utilized to create a .tar.gz backup for your selection of directories and files that are scattered in the system.
+- Improved Portal Servers handling:
+.. Improved Portal Servers EPG handling.
+.. Improved playing Live channels on some portal servers which did not work before.
+.. Added new settings option "Portal Servers Connection Timeout (seconds)" for custom connection timeout. Increasing the timeout to 4 seconds helped with some portal servers.
+- Added new IPTV option "Change Bouquet References to Unique Codes .." to handle one bouquet at a time.
+- You can add you blacklist of words you need to hide in IPTV tables.
+.. This works along with the settings "Skip Adults Channels (from IPTV Server)" to hide words.
+.. Example: Adding "acbd" will hide all IPTV Catogries/Channels that include "acbd" from IPTV tables.
+.. How to set it:
+... 1- Create the file "ajpanel_iptv_blacklist" in the panel's backup directory.
+... 2- Start adding the words you need to hide (each word in a separate line and is case-insensitive).
+- You can add your custom IPTV prefix words to remove from IPTV tables.
+.. This works along with the settings option "Remove IPTV Channel Name Prefix (|EN| , |AR|Drama|)".
+.. Example: Adding the word "Sport | En:" will remove it from all IPTV channel names in the tables.
+.. How:
+... 1- Create the file "ajpanel_iptv_prefix" in the panel's backup directory.
+... 2- Start adding the prefixes you need to remove (each in a separate line and is case-insensitive).
+- Improved the option "Active Feeds" to show the feed in a table with number of packages in each feed.
+- Improved File Manager to refresh the file list after editing a file (to show the new x.bak file).
+- Fixed the problem of incomplete download of PIcons/EPG when updating for current bouquet.
+- Fixed the crash that occurs after downloading PIcons from IPTV tables.
+- Fixed the crash that occurs on Dream-Two-OE2.6 when opening subtitle font selection menu.
+- Fixed a crash on OpenATV-7-2 when opening "Download Manager" (if ehe files in progress have been deleted).
+- General improvements and bug fixes.
+
+# ------------------------------------------------------------------------------------------------------------
+[v8.5.0 .. 2023-02-04]
+- Added "Plugins Browser" to the Plugins page (with plugin icons and group selection).
+.. This will replace the functionality of "Plugins Additional Menus" , "Startup Plugins" , "Extensions and System Plugins".
+- Added "Upgradable Packages" to the Plugins page (to upgrade packages).
+.. It is recommended that you use the option "Update Packages List from Feed" to get the latest list.
+- Added the option "Change Custom Commands File" to Terminal Custom Commands Options (Yellow Button).
+.. You can load any file that start with "ajpanel_cmd" or "LinuxCommands" (case insensitive).
+.. File name examples:
+... ajpanel_cmd
+... ajpanel_cmd_20012023.txt
+... ajpanel_cmd_myPlugins_commands_2023_01_20
+... LinuxCommands
+... LinuxCommands.txt
+... linuxcommands_install_20_plugins.myFile
+- Improved "Restore Tuner Settings" for VTi to be able to restore from backups from other images.
+.. This feature is already available for other STBs and images.
+- Improved File Manager:
+.. Added progress bar during the process of copying/moving files and directories.
+.. Added functionality to process M3U8 files "M3U/M3U8 File Browser".
+.. Added functionality to extract ".gz" single compressed file.
+- Added new Setting "Subtitle Files Encoding Priority" to set the first encoding to use with .srt files.
+- Improved changing Subtitle Delay (with Left/Right arrows) to show current delay in a popup message.
+- Improved the Player-Bar to show the current running player.
+- Improved "M3U/M3U8 File Browser" grouping and filtering + handling of different M3U/M3U8 formats.
+- Improved Terminal "Info" button in Custom Commands table to show more command info.
+- Fixed incorrect text viewer height on VTi.
+- Fixed FTP file-upload to stop properly when the user cancels the upload.
+
+# ------------------------------------------------------------------------------------------------------------
+[v8.4.0 .. 2023-01-09]
+- Added "Channels Browser" option to the System "Channel Context Menu" to browse channels with PIcons.
+.. From System "Channel selection", click menu then "AJPanel - Channels Browser".
+.. It works on all types of groups (All, Satellites, Provider, Favourites) including IPTV bouquets.
+- Added menu option "Add FTP Media to Bouquet" to Player menu (to add the streamed media from FTP to local bouquets).
+- Improved Portal channels zap.
+- Fixed FTP Exit (cannot exit if "File Manager Exit-Button Action" setting is set to "Directory Up").
+- Fixed the crash reported on systems with low resources when scanning the network.
+
+# ------------------------------------------------------------------------------------------------------------
+[v8.3.0 .. 2023-01-01]
+- Added Network option to Main Page to handle network functions.
+.. Added Network and Port Scanner options.
+.. Moved the option "Check Internet Connection" to the new Network option.
+- Added FTP File Browser (remote File Manager on network devices) with the following features:
+.. Transfer files between local and remote storage.
+.. Play remote movies (if streaming is active on remote devices).
+.. View remote picture files.
+.. Create directories and Rename/Delete files/directories on remote device.
+.. Tested on network attached devices such as NAS, Receivers, Laptops/PCs and Router USBs.
+- Improved portal handling to access more portal servers versions.
+
+# ------------------------------------------------------------------------------------------------------------
+[v8.2.0 .. 2022-12-16]
+- File Manager:
+.. Added Multi-Select to Archive/Copy/Move/Delete user selected files and directories.
+.. Improved file deletion to force delete some undeletable files.
+.. Fixed shortcuts (showing search-by-typing instead of selecting the options).
+.. Fixed properties (for empty directories).
+- Improved portal handling for more portal servers (including old servers versions).
+- Added option to Server Browser (Poster Mode) to use the selected poster for a Local Media file.
+- Added "0" key to Movies/Poster/PIcons Browsers to jump to first/last item in the listed items.
+- Added "Help (Keys)" menu option to Movies/Poster Browsers.
+- Added menu to IPTV Page to delete Favourite Server Menu Option.
+- Improved tables to show green column title (if sorted in ascending order) and blue (if descending order).
+- Fixed Tables not sorting the same column in ascending after sorting it in descending order.
+
+# ------------------------------------------------------------------------------------------------------------
+[v8.1.0 .. 2022-12-03]
+- Added options to Movies Browser to change the poster for a movie.
+- Fixed crashes on DM900 and Dream-Two:
+.. When trying to access AJPanel Settings.
+.. When applying the changes in the option "Copy EPG between Channels (from xml file)".
+- Improved AJPanel internal update.
+
+# ------------------------------------------------------------------------------------------------------------
  [v8.0.0 .. 2022-12-01]
 - Added "Movies Browser" to main page. It read the movies from the directory set in the Settings (+ all its sub-directories).
 - Added "EPG" option to main page. The option is also available in Channel List Context Menu >> AJPanel - Channels Tools.
