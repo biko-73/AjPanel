@@ -7,6 +7,22 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
+[v8.6.2 .. 2023-03-01]
+- Improved Portal Channel-Info to update system EPG.
+.. Note: Opening Info-Window while playing IPTV channels, the received EPG and PIcon will be imported into the system. This works for Portal/Playlist servers.
+- Fixed portal zapping in bouquets to point to the right name in Channel List.
+.. The problem was encountered with old bouquets that were added prior to v8.6.1.
+- Improved portal tables to point to the current source of the playing channel (if the channel is from the same server).
+.. This means that when you start browsing the portal server for the current playing channel, the tables will point to the source of the channel all the way to the last table.
+.. This feature will work on bouquets that will be added from now on (starting with this version).
+- Improved "Channels Browser" to handle PIcons with spaces removed from their file names.
+
+# ------------------------------------------------------------------------------------------------------------
+[v8.6.1 .. 2023-02-27]
+- Improved "Channels Browser" to find the PIcon with capital/small letter name if original name is not found.
+- Fixed "Restore Channels" showing the wrong result message "Error while restoring: ...".
+- Fixed setting option "Backup AJPanel Settings" (was not working).
+- Fixed some minor reported issues.
 
 # ------------------------------------------------------------------------------------------------------------
 [v8.6.0 .. 2023-02-26]
