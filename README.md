@@ -7,6 +7,17 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
+[v8.7.0 .. 2023-03-08]
+- Added "Bouquet Editor" with Multi-Selection Delete/Move/Sort.
+.. Can also rename bouquets/services and add/edit markers.
+- Fixed a crash on Dream-Two (when saving settings).
+- General improvements and bug fixes.
+
+# ------------------------------------------------------------------------------------------------------------
+[v8.6.3 .. 2023-03-02]
+- Fixed a crash when exiting File Manager after creating a SymLink.
+
+# ------------------------------------------------------------------------------------------------------------
 [v8.6.2 .. 2023-03-01]
 - Improved Portal Channel-Info to update system EPG.
 .. Note: Opening Info-Window while playing IPTV channels, the received EPG and PIcon will be imported into the system. This works for Portal/Playlist servers.
