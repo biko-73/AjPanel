@@ -7,6 +7,21 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
+[v8.8.0 .. 2023-03-15]
+
+- Improved "Bouquet Editor".
+.. The Bouquet Editor can now be accessed from Channel List Context Menu.
+.. Added "Add Empty Bouquet" to create a new empty bouquet in main bouquets list.
+.. Added options to Hide/Unhide Bouquets.
+.. Added options Protect/Unprotect Bouquets (Parental Control).
+.. Added "Copy to Bouquet" to copy bouquets/channels services to other bouquets in main bouquets list.
+.. Note: Copying bouquets into other bouquets will create sub-bouquets (bouquets-in-bouquets).
+- Added "Find and Replace" to File Editor (currently replaces all occurrences).
+- Fixed File Editor to maintain the leading spaces in lines.
+- Improved the performance of "List Archived Files" in File Manager (when working with big .tar.gz files).
+- General improvements and bug fixes.
+
+# ------------------------------------------------------------------------------------------------------------
 [v8.7.0 .. 2023-03-08]
 - Added "Bouquet Editor" with Multi-Selection Delete/Move/Sort.
 .. Can also rename bouquets/services and add/edit markers.
