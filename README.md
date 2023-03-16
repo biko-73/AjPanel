@@ -7,8 +7,15 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
-[v8.8.0 .. 2023-03-15]
 
+[v8.8.1 .. 2023-03-16]
+
+- Added access to Terminal from Extension Menu (so that a hotkey can be assigned to it).
+- Improved Bouquet Editor to clean the remaining files after deleting sub-bouquets.
+- Fixed the crash on some images that occurs when trying to access the Bouquet Editor.
+
+# ------------------------------------------------------------------------------------------------------------
+[v8.8.0 .. 2023-03-15]
 - Improved "Bouquet Editor".
 .. The Bouquet Editor can now be accessed from Channel List Context Menu.
 .. Added "Add Empty Bouquet" to create a new empty bouquet in main bouquets list.
