@@ -8,6 +8,13 @@
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
 
+[v8.8.3 .. 2023-03-22]
+- Fixed settings option "Portal Servers Connection Timeout (seconds)" (showing "<not-a-string>" on Open-ATV).
+- Fixed the restarts on VTi-v15.0.02 when opening "AJPanel Requirements" and "Network Devices".
+- Fixed the marker icon (not shown in Bouquet Editor on some images).
+- General improvements and bug fixes.
+
+# ------------------------------------------------------------------------------------------------------------
 [v8.8.1 .. 2023-03-16]
 
 - Added access to Terminal from Extension Menu (so that a hotkey can be assigned to it).
