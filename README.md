@@ -8,6 +8,19 @@
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
 
+[v8.8.4 .. 2023-05-05]
+- Added functionality to extrct 7z files.
+- Improved "Plugins Browser".
+.. Added "Plugins Browser" option to "Extensions Menu".
+.. Added new options to "Remove Plugins" and "Download new Plugins" (Red & Green Buttons).
+- Improved "Bouquet Editor".
+.. Added a new option to "Copy to Main Bouquets List".
+.. Added a new option to "Delete Unused .del Bouquets Files".
+.. Will now delete all related files when a bouquet is deleted.
+- Fixed "Posters Mode" to handle special PIcon name formats (for some IPTV servers).
+- General improvements and bug fixes.
+
+# ------------------------------------------------------------------------------------------------------------
 [v8.8.3 .. 2023-03-22]
 - Fixed settings option "Portal Servers Connection Timeout (seconds)" (showing "<not-a-string>" on Open-ATV).
 - Fixed the restarts on VTi-v15.0.02 when opening "AJPanel Requirements" and "Network Devices".
