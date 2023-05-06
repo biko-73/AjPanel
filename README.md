@@ -7,7 +7,10 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
+[v8.8.5 .. 2023-05-06]
+- Fixed Plugins Browser to run AJPanel (if called from Extensions Menu).
 
+# ------------------------------------------------------------------------------------------------------------
 [v8.8.4 .. 2023-05-05]
 - Added functionality to extrct 7z files.
 - Improved "Plugins Browser".
