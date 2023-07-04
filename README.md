@@ -7,6 +7,14 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
+[v8.8.6 .. 2023-07-04]
+- Improved IPTV channels refreshing to hide the InfoBar (for some images).
+- Fixed the problem of AJPanel not installing on DM900 (Image="satdreamgr").
+- Fixed IPTV option "IPTV Server Browser (from Current Channel)" for Python-3.11.2.
+- Fixed Bouquet Editor Multi-Select function (for Egami-10.4-R2 and Pure2-7.3).
+- General improvements and bug fixes.
+
+# ------------------------------------------------------------------------------------------------------------
 [v8.8.5 .. 2023-05-06]
 - Fixed Plugins Browser to run AJPanel (if called from Extensions Menu).
 
