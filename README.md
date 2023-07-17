@@ -12,7 +12,7 @@
 - Fixed some issues with reading xml files on some images (e.g. when reading stellites.xml).
 - Fixed the tables for some images where last column is not updated.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.8.6 .. 2023-07-04]
 - Improved IPTV channels refreshing to hide the InfoBar (for some images).
 - Fixed the problem of AJPanel not installing on DM900 (Image="satdreamgr").
@@ -20,11 +20,11 @@
 - Fixed Bouquet Editor Multi-Select function (for Egami-10.4-R2 and Pure2-7.3).
 - General improvements and bug fixes.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.8.5 .. 2023-05-06]
 - Fixed Plugins Browser to run AJPanel (if called from Extensions Menu).
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.8.4 .. 2023-05-05]
 - Added functionality to extrct 7z files.
 - Improved "Plugins Browser".
@@ -37,21 +37,21 @@
 - Fixed "Posters Mode" to handle special PIcon name formats (for some IPTV servers).
 - General improvements and bug fixes.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.8.3 .. 2023-03-22]
 - Fixed settings option "Portal Servers Connection Timeout (seconds)" (showing "<not-a-string>" on Open-ATV).
 - Fixed the restarts on VTi-v15.0.02 when opening "AJPanel Requirements" and "Network Devices".
 - Fixed the marker icon (not shown in Bouquet Editor on some images).
 - General improvements and bug fixes.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.8.1 .. 2023-03-16]
 
 - Added access to Terminal from Extension Menu (so that a hotkey can be assigned to it).
 - Improved Bouquet Editor to clean the remaining files after deleting sub-bouquets.
 - Fixed the crash on some images that occurs when trying to access the Bouquet Editor.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.8.0 .. 2023-03-15]
 - Improved "Bouquet Editor".
 .. The Bouquet Editor can now be accessed from Channel List Context Menu.
@@ -65,18 +65,18 @@
 - Improved the performance of "List Archived Files" in File Manager (when working with big .tar.gz files).
 - General improvements and bug fixes.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.7.0 .. 2023-03-08]
 - Added "Bouquet Editor" with Multi-Selection Delete/Move/Sort.
 .. Can also rename bouquets/services and add/edit markers.
 - Fixed a crash on Dream-Two (when saving settings).
 - General improvements and bug fixes.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.6.3 .. 2023-03-02]
 - Fixed a crash when exiting File Manager after creating a SymLink.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.6.2 .. 2023-03-01]
 - Improved Portal Channel-Info to update system EPG.
 .. Note: Opening Info-Window while playing IPTV channels, the received EPG and PIcon will be imported into the system. This works for Portal/Playlist servers.
@@ -87,14 +87,14 @@
 .. This feature will work on bouquets that will be added from now on (starting with this version).
 - Improved "Channels Browser" to handle PIcons with spaces removed from their file names.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.6.1 .. 2023-02-27]
 - Improved "Channels Browser" to find the PIcon with capital/small letter name if original name is not found.
 - Fixed "Restore Channels" showing the wrong result message "Error while restoring: ...".
 - Fixed setting option "Backup AJPanel Settings" (was not working).
 - Fixed some minor reported issues.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.6.0 .. 2023-02-26]
 - Added "Package Creator" in Plugins page to create ipk/deb/tar.gz packages from a custom project file.
 .. This creates a project directory & project with everything you needed to create ipk/deb/tar.gz packages.
@@ -131,7 +131,7 @@
 - Fixed a crash on OpenATV-7-2 when opening "Download Manager" (if ehe files in progress have been deleted).
 - General improvements and bug fixes.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.5.0 .. 2023-02-04]
 - Added "Plugins Browser" to the Plugins page (with plugin icons and group selection).
 .. This will replace the functionality of "Plugins Additional Menus" , "Startup Plugins" , "Extensions and System Plugins".
@@ -160,7 +160,7 @@
 - Fixed incorrect text viewer height on VTi.
 - Fixed FTP file-upload to stop properly when the user cancels the upload.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.4.0 .. 2023-01-09]
 - Added "Channels Browser" option to the System "Channel Context Menu" to browse channels with PIcons.
 .. From System "Channel selection", click menu then "AJPanel - Channels Browser".
@@ -170,7 +170,7 @@
 - Fixed FTP Exit (cannot exit if "File Manager Exit-Button Action" setting is set to "Directory Up").
 - Fixed the crash reported on systems with low resources when scanning the network.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.3.0 .. 2023-01-01]
 - Added Network option to Main Page to handle network functions.
 .. Added Network and Port Scanner options.
@@ -183,7 +183,7 @@
 .. Tested on network attached devices such as NAS, Receivers, Laptops/PCs and Router USBs.
 - Improved portal handling to access more portal servers versions.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.2.0 .. 2022-12-16]
 - File Manager:
 .. Added Multi-Select to Archive/Copy/Move/Delete user selected files and directories.
@@ -198,7 +198,7 @@
 - Improved tables to show green column title (if sorted in ascending order) and blue (if descending order).
 - Fixed Tables not sorting the same column in ascending after sorting it in descending order.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 [v8.1.0 .. 2022-12-03]
 - Added options to Movies Browser to change the poster for a movie.
 - Fixed crashes on DM900 and Dream-Two:
@@ -206,7 +206,7 @@
 .. When applying the changes in the option "Copy EPG between Channels (from xml file)".
 - Improved AJPanel internal update.
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
  [v8.0.0 .. 2022-12-01]
 - Added "Movies Browser" to main page. It read the movies from the directory set in the Settings (+ all its sub-directories).
 - Added "EPG" option to main page. The option is also available in Channel List Context Menu >> AJPanel - Channels Tools.
@@ -243,7 +243,7 @@
 - Fixed AJPanel installation GUI Restart command for Egami (in "postinst").
 - Fixed Restore-Tuner for VTi (freezing after GUI Restart).
 
-# ------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
  [v7.4.0 .. 2022-10-21]
 - Added Font Previw to font selector.
