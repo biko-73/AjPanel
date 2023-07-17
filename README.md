@@ -7,6 +7,12 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
+[v8.8.7 .. 2023-07-17]
+- Improved Plugins Browser to handle the new "Download/Remove Plugins" on the latest OpenATV-7.3.
+- Fixed some issues with reading xml files on some images (e.g. when reading stellites.xml).
+- Fixed the tables for some images where last column is not updated.
+
+# ------------------------------------------------------------------------------------------------------------
 [v8.8.6 .. 2023-07-04]
 - Improved IPTV channels refreshing to hide the InfoBar (for some images).
 - Fixed the problem of AJPanel not installing on DM900 (Image="satdreamgr").
