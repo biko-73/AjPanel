@@ -7,6 +7,16 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
+[v8.8.8 .. 2023-08-25]
+- Added the option "Bouquets Importer" to the "Bouquet Editor".
+- Added new options to help Feed/Repo owners to generate packages list files:
+.. Added "Generate Feed Listing Info." to File Manager (for ipk/deb files).
+.. Added "Generate Package.gz (from ipk/deb directory)" to Plugins page.
+- Added last modification time to EPG Cache File info.
+- Increased the timeout for connections to some slow playlist servers.
+- Improved SoftCam tools to handle OSCam-iCam.
+  
+# ------------------------------------------------------------------------------
 [v8.8.7 .. 2023-07-17]
 - Improved Plugins Browser to handle the new "Download/Remove Plugins" on the latest OpenATV-7.3.
 - Fixed some issues with reading xml files on some images (e.g. when reading stellites.xml).
