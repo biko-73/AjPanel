@@ -9,7 +9,7 @@
 
 [v9.0.0 .. 2023-10-28]
 - Improved the panel installation to automatically install the optional dependencies.
-.. This depends on availability of the dependencies on your updated feed.
+-- This depends on availability of the dependencies on your updated feed.
 - Moved Download Manager process file to the Backup directory (to be able to use it on other images).
 - Improved Local IPTV Services:
 .. Added "Delete Current List (from all Bouquets)" to delete a filtered list.
