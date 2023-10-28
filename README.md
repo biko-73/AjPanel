@@ -7,6 +7,85 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
+[v9.0.0 .. 2023-10-28]
+- Improved the panel installation to automatically install the optional dependencies.
+.. This depends on availability of the dependencies on your updated feed.
+- Moved Download Manager process file to the Backup directory (to be able to use it on other images).
+- Improved Local IPTV Services:
+.. Added "Delete Current List (from all Bouquets)" to delete a filtered list.
+.. Improved the filtering function.
+.. Improved Table contents and Channel Info.
+- Redesigned the code for Backup/Restore functions for better performance and results.
+- Fixed the Tuner Restore problem (for big list of LNBs)
+- Improved "Tuners Info" option to show more details.
+- Improved "Package Info." to show better details for installed packages and ipk/deb files.
+- Improved Plugins page tables:
+.. Modified "Download/Install Packages (from image feeds)" table to highlight the installed packages.
+.. Added Blue Button to "Remove Packages" and "Upgradable Packages" tables to toggle update-hold-flag for packages.
+.. Modified "Remove Packages" tables to show the removal effect in table (instead of exiting the table).
+.. Added new filters to "Download/Install Packages (from image feeds)" table.
+- Improved Bouquets Importer:
+.. Handles Stream Relay Services and imports the necessary data to the system.
+.. Shows progress bar for lengthy functions (to see the progress and be able to cancel the process).
+- Improved File Manager:
+.. Introduced new methods to Copy/Move items (with 2 progress bars to monitor the process).
+.. Added the option "Show Related Package" to show Package Info for directories in Extensions/Systemplugins.
+.. Added option to convert IPK to DEB (and vice versa).
+.. Added option to convert IPK and DEB files to tar.gz file.
+.. Added icons for local and network mount points.
+.. Executing a script file now runs directly in the Terminal.
+- Improved Player Bar:
+.. Redesigned the menu options.
+.. Added menu option to change the timeout (to hide the bar automatically).
+.. Improved Player Bar to handle services played as Stream Relay.
+.. "Play with" Menu can now be opened with Long-Press on the PLAY button.
+.. Fixed "Refresh" (Green Button) to restore last playing position (when the Bar is hidden).
+- Improved Subtitle:
+.. Redesigned Subtitle Menu + improved functionality.
+.. Added the option "Change Suggestion Search Path" to Subtitle menu (to set a custom Suggestion Search Path).
+.. Added Subtitle option "Event Name Search Language" to search for srt files with the original or English translated name.
+- Improved to temporarily disable auto-start for local movies (until the next manual start from Player Bar menu).
+- Added new options to backup and restore /etc/enigma2/settings file.
+.. The backup file name includes the image name.
+.. When restoring, it will warn the user if the file is for a different Image.
+.. Before restoring a file, the panel will backup the settings file (to setting.bak).
+- Improved Package Creator:
+.. More analysis of resource and control fields to highlight problems.
+.. Output package file will include "_py2" / "_py3" if the project name includes "Py2" or ""Py3"".
+.. Added new option:
+... "Add Resource Files/Dirs" (now imports multiple files/dirs).
+... "Import Files/Dirs List from an Installed Package".
+... "Add Control Field"
+... "Delete All Resources".
+... "Delete Invalid Resources".
+... "Undo Last Project File Changes".
+- Improved Terminal:
+.. Added option to endable/disable Terminal-Exit Confirmation.
+.. Added option to endable/disable Text Wrapping.
+.. Added functionality to Terminal to change the Commands Table colors per line or group of lines block.
+.. Improved Terminal layout and buttons usage. Check the detail in in Terminal INFO button.
+.. Added Green Button to Minimiza/Maximize Terminal window (minimized to top left corner with one line).
+.. You can run a script file from its path in the Custom-Commands file. Line Example: /media/usb/backup/my_script.sh
+- Added options to "Dev. Info" to show detailed information about the device drivers.
+.. "Drivers (Kernel Object)"
+.. "Drivers (Loadable Kernel Modules - LKM)"
+.. "Drivers (Built-in Kernel Modules)"
+- Added new option to "Dev. Info." to check if the current Image supports the new Stream Relay patch.
+- Added new Stream Relay services filter to "Services (Change Parental-Control & Hidden)" table.
+- Redesigned the data presentation "Dev. Info" fo:
+.. "Box Info"
+.. "Disk Usage"
+.. "File System Table (FSTAB)"
+.. "Block-Devices List"
+- Merged "xCam Live Status" and "xCam Live Readers" data into one table the refreshes every 3 seconds.
+- Redesigned the code for packages handling (ipk/deb/tar).
+- Improved Archive Files handling (tar/tar.gz/tar.xz/tar.bz2/gz/zip/rar/7z).
+- Improved mount points data presentation in "Dev. Info".
+- Improved connections timeout for to some slow playlist servers (in Catch-up TV).
+- Improved "Check & Filter" for portal servers.
+- General improvements and bug fixes.
+- 
+# ------------------------------------------------------------------------------
 [v8.8.8 .. 2023-08-25]
 - Added the option "Bouquets Importer" to the "Bouquet Editor".
 - Added new options to help Feed/Repo owners to generate packages list files:
