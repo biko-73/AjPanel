@@ -84,7 +84,7 @@
 - Improved connections timeout for to some slow playlist servers (in Catch-up TV).
 - Improved "Check & Filter" for portal servers.
 - General improvements and bug fixes.
-- 
+  
 # ------------------------------------------------------------------------------
 [v8.8.8 .. 2023-08-25]
 - Added the option "Bouquets Importer" to the "Bouquet Editor".
