@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+##############################################################################################################
+###  Menu Attributes																					   ###
+##############################################################################################################
+
+	==============================================================================================
+	General Attributes (for List and Grid Menus)
+	==============================================================================================
+
+		Attribute			Usage							Remarks					Default Value
+		...............		..............................	....................	..............................................
+		title				Menu item title					Mandatory				No default value (must be set by user)
+		info				Menu item brief description		Any text				Default is title text
+		width				Menu width						Range = See Note-4		800  (see Note-4)
+		height				Menu height 					Range = See Note-4		1000 (see Note-4)
+		mode				List or Grid Menu				list/grid/grid1			list (see Note-4)
+		fg					Menu text color					Format = See Note-2		"#00ffffff"
+		bg					Menu background color			Format = See Note-2		"#0c001122" ... or : wallpaper file path
+		title_fg			Title text color				Format = See Note-2		"#00ffffaa"
+		title_bg			Title background color			Format = See Note-2		"#11000011"
+		title_font_size		Title font						Range  = 20 - 50		50
+		icon				Path of menu item icon			See Note-3				Default icons are set by the panel.
+		ask					Confirmation question			See Note-1				No confirmation question
+
+	==============================================================================================
+	List-Menu Attributes
+	==============================================================================================
+
+		Attribute			Usage							Remarks					Default Value
+		...............		..............................	....................	..............................................
+		font_size			Menu font						Range  = 10 - 50		30
+		line_gap			Menu line top/bottom spacing	Range  = 0 - 100		0
+		align_items			Menu text alignment				left/center/reight		"left"
+		cursor_fg			Pointer text color				Format = See Note-2		"#11ff8000"
+		cursor_bg			Pointer background color		Format = See Note-2		"#11442244"
+
+	==============================================================================================
+	Grid-Menu Attributes
+	==============================================================================================
+
+		Attribute			Usage							Remarks					Default Value
+		...............		..............................	....................	..............................................
+		title1_fg			1st Info Line text color		Format = See Note-2		Bright Green
+		title1_bg			1st Info Line background color	Format = See Note-2		Title color (transparent if wallpaper is used)
+		title2_fg			2nd Info line text color		Format = See Note-2		White
+		title2_bg			2nd Info line background		Format = See Note-2		Title color (transparent if wallpaper is used)
+		num_fg				Item/Page number				Format = See Note-2		Bright Grey
+		num_bg				Item/Page number				Format = See Note-2		Title color (transparent if wallpaper is used)
+		shade				To show shadow around items		E.g. : shade="yes"		No shading
+
+##############################################################################################################
+###  Notes																								   ###
+##############################################################################################################
+
+	........................................................................
+	Note-1 : Confirmation
+	........................................................................
+
+		The panel can confirm with the user before taking any action.
+		.. If the attribute "ask" is not used, there will be no cofirmation.
+		.. I ask="" is added, the panel will confirm with the question "Continue ?" before taking action.
+		.. I ask="Are youe sure ?", the panel will confirm with this custom question before taking action.
+
+	........................................................................
+	Note-2 : Colors
+	........................................................................
+
+		- Color format = "#AARRGGBB" (Alpha_channel, Red, Green, Blue).
+			.. Examples:
+				"#00FF8000" = Opaque Orange
+				"#55FFFF00" = Yellow with transparency
+
+		- For Main Menu and Sub-Menus, you can set a wallpaper as a menu background.
+			.. Example : bg="/media/usb/myWallpaper.jpg"
+
+	........................................................................
+	Note-3 : Icons
+	........................................................................
+
+		- Default icons are set by the panel.
+		- If custom icon is required, it can be added in two way:
+			Method-1: Add the full path of the icon file. 			... Example : icon="/media/myIcon.png"
+			Method-2: Add a Base64-picture string.		 			... Example : icon="data:image/png;base64,iVBORw0KGg..."
+
+	........................................................................
+	Note-4 : Menu Mode
+	........................................................................
+
+		- The default mode is a list-menu.
+
+		- List Mode Menu:
+			.. Width range  : 500 - 1920
+			.. Height range : 400 - 1080	... Height = maximum menu height (auto adjusted based to total items).
+
+		- Grid Mode Menu:
+			.. Width range  : 600 - 1920
+			.. Height range : 600 - 1080
+			.. Attributes that are ignored in grid mode : line_gap , font_size , cursor_fg , cursor_bg
+			.. If mode="grid"  : Small icons will be stretched to fill the picture height.
+			.. If mode="grid1" : Small icons will retain their size.
+			.. Default number of items in a page = 5 cols x 4 rows (maximum = 9 cols x 6 rows). They can be changed as follows:
+				mode				Cols	Rows	Remarks
+				..........			...		....	.................................................................
+				mode="grid"			5		4		Grid Menu (small icons are will stretched to the picture area)
+				mode="grid1"		5		4		Grid Menu (small icons size is not changed)
+				mode="grid_6x3"		6		3		Grid Menu (small icons are will stretched to the picture area)
+				mode="grid1_8x5"	8		5		Grid Menu (small icons size is not changed)
+
+##############################################################################################################
+###  Menu Items Separator																				   ###
+##############################################################################################################
+
+	Separators are only valid in List Mode Menu and can be added with:
+
+	<separator/>
+
+##############################################################################################################
+###  Using special characters (< > ' " &)																   ###
+##############################################################################################################
+
+	........................................................................
+	Method-1: Replace the characters with their escape codes
+	........................................................................
+		Example:
+			<item name="Testin Special Characters (E.g. : &amp;)"> ls /home &amp;&amp; echo '' &amp;&amp; df </item>
+
+		Code table:
+			Char	Escape String	Alternatively
+		    ....	.............	.............
+		    <		&lt;			&#60;
+		    >		&gt;			&#62;
+		    '		&apos;			&#39;
+		    "		&quot;			&#34;
+		    &		&amp;			&#38;
+
+	........................................................................
+	Method-2: Surround the commands with CDAT strings
+	........................................................................
+		Example:
+			<![CDATA[
+				ls /home && echo '' && df
+			]]>
+
+	........................................................................
+	Method-3: Put the commands in a script file and call the script path
+	........................................................................
+		Example:
+			<item name="Run a Script File">/media/usb/aaa/myScript.sh</item>
+
+##############################################################################################################
+### Main Menu Setup																						   ###
+##############################################################################################################
+-->
+<ajp_menu title="Custom Tools" mode="grid" shade="yes" bg="/media/usb/AAA/Backup/Misc/wallpaper4.jpg">
+
+	<!-- ============================================================================================== -->
+	<!-- Open AJPanel Option																			-->
+	<!-- ============================================================================================== -->
+	<submenu title="AJPanel Options (Grid)" mode="grid" width="1200" height="800" info="AJPanel Options (Grid Mode Menu)" icon="/usr/lib/enigma2/python/Plugins/Extensions/AJPan/res/ajp.png">
+		<item name="File Manager">ajp_fman</item>
+		<separator/>
+		<item name="IPTV">ajp_iptv</item>
+		<item name="Movies Browser">ajp_movie</item>
+		<item name="Services/Channels">ajp_chan</item>
+		<item name="Channels Browser">ajp_chanBr</item>
+		<item name="Bouquet Editor">ajp_bouq</item>
+		<item name="PIcons">ajp_picon</item>
+		<item name="EPG">ajp_epg</item>
+		<item name="XML-TV Tools">ajp_xmltv</item>
+		<separator/>
+		<item name="Terminal">ajp_term</item>
+		<item name="SoftCam">ajp_soft</item>
+		<item name="Plugins">ajp_plugin</item>
+		<item name="Plugins Browser">ajp_plugBr</item>
+		<item name="Backup &amp; Restore">ajp_bakup</item>
+		<separator/>
+		<item name="Date/Time">ajp_date</item>
+		<item name="Network">ajp_net</item>
+		<separator/>
+		<item name="Device Info">ajp_info</item>
+		<item name="Check Internet">ajp_inet</item>
+	</submenu>
+
+	<!-- ============================================================================================== -->
+	<!-- Open AJPanel Option																			-->
+	<!-- ============================================================================================== -->
+	<submenu title="AJPanel Options (List)" info="AJPanel Options (List Mode Menu)" icon="/usr/lib/enigma2/python/Plugins/Extensions/AJPan/iconhd.png" title_bg="#33000033" cursor_fg="#11ff8000" cursor_bg="#11442211" font_size="30" >
+		<item name="File Manager">ajp_fman</item>
+		<separator/>
+		<item name="IPTV">ajp_iptv</item>
+		<item name="Movies Browser">ajp_movie</item>
+		<item name="Services/Channels">ajp_chan</item>
+		<item name="Channels Browser">ajp_chanBr</item>
+		<item name="Bouquet Editor">ajp_bouq</item>
+		<item name="PIcons">ajp_picon</item>
+		<item name="EPG">ajp_epg</item>
+		<item name="XML-TV Tools">ajp_xmltv</item>
+		<separator/>
+		<item name="Terminal">ajp_term</item>
+		<item name="SoftCam">ajp_soft</item>
+		<item name="Plugins">ajp_plugin</item>
+		<item name="Plugins Browser">ajp_plugBr</item>
+		<item name="Backup &amp; Restore">ajp_bakup</item>
+		<separator/>
+		<item name="Date/Time">ajp_date</item>
+		<item name="Network">ajp_net</item>
+		<separator/>
+		<item name="Device Info">ajp_info</item>
+		<item name="Check Internet">ajp_inet</item>
+	</submenu>
+
+	<!-- ============================================================================================== -->
+	<!-- Recursive Submenus (with different size, colors and text alignment)							-->
+	<!-- ============================================================================================== -->
+	<submenu title="Recursive Menus" info="Cascaded menus + Menu Alignment Test" width="800" bg="#06006666" title_bg="#06004444" >
+		<submenu title="Test Commands (Center List Items)" width="1100" bg="#06770077" title_bg="#06aa00aa" align_items="center" >
+			<!-- ============================================================================================== -->
+			<!-- Testing RTL (Right-to-Left)																	-->
+			<!-- ============================================================================================== -->
+			<submenu title="تجربة Right-to-Left" width="800" height="500" fg="#22ffffff" bg="#22003322" font_size="35" align_items="right" title_fg="#33ffffaa" title_bg="#11003333" title_font_size="50" cursor_fg="#11ff8000" cursor_bg="#11442244">
+				<item name="تثبيت AJPanel - v9.0.0" ask="">wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh</item>
+				<item name="تثبيت AJPanel - Latest" ask="">wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh</item>
+			</submenu>
+
+			<item name="Using Special Characters (E.g. : &amp;) ... Method-1"> ls /home &amp;&amp; echo '' &amp;&amp; df </item>
+			<item name="Using Special Characters (E.g. : &amp;) ... Method-2">
+				<![CDATA[
+					ls /home && echo '' && df
+				]]>
+			</item>
+		</submenu>
+		<item name="Disk Usage">df</item>
+		<item name="LSOF">lsof</item>
+		<item name="Uptime">uptime</item>
+	</submenu>
+
+	<!-- ============================================================================================== -->
+	<!-- Simple GRID Submenu (small icons are will stretched to the picture area)						-->
+	<!-- ============================================================================================== -->
+	<submenu title="GRID Menu (mode='grid_3x1')" mode="grid_3x3" title_font_size="30" info="Simple GRID Submenu (will stretch small icons to fit the picture area)">
+		<item name="Disk Usage">df</item>
+		<item name="LSOF">lsof</item>
+		<item name="Uptime">uptime</item>
+	</submenu>
+
+	<!-- ============================================================================================== -->
+	<!-- Simple GRID Submenu (small icons size is not changed)											-->
+	<!-- ============================================================================================== -->
+	<submenu title="GRID Menu (mode='grid1_3x3')" mode="grid1_3x3" info="Simple GRID Submenu (will not stretch small icons to fit the picture area)">
+		<item name="Disk Usage">df</item>
+		<item name="LSOF">lsof</item>
+		<item name="Uptime">uptime</item>
+	</submenu>
+
+	<!-- ============================================================================================== -->
+	<!-- Call another Custom Menu File																-->
+	<!-- ============================================================================================== -->
+	<item name="External Menu File" info="Open a menu from another XML file">ajpanel_menu_ajp1.xml</item>
+	<item name="Biko73" font_size="50" info="xml file by biko have a coustm codes - plugins - ...." icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAACECAYAAAD7h0UbAAAACXBIWXMAAAsTAAALEwEAmpwYAAAQd2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIiB4bWxuczpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjFGNDgzNUJBMTI5REUzMTE5QjRGOUU1QzA3NTVBQkI2IiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZDdmMjViNDgtOTc2My04YjQ5LWIyNmEtYzk2ZTY1NWRlZjRiIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjBjNDczOTgxLTBhN2UtNTU0Ny1hMzJmLWUwZmM4YzUyMWFlMSIgeG1wOkNyZWF0b3JUb29sPSJBQ0RTZWUgUXVpY2sgVmlldyIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMDYtMThUMjM6MzI6NTMrMDI6MDAiIHhtcDpDcmVhdGVEYXRlPSIyMDIxLTAyLTI0VDE4OjMyOjMzKzAyOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIxLTA2LTE4VDIzOjMyOjUzKzAyOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB0aWZmOkltYWdlV2lkdGg9IjIyMCIgdGlmZjpJbWFnZUxlbmd0aD0iMTMyIiB0aWZmOlBob3RvbWV0cmljSW50ZXJwcmV0YXRpb249IjIiIHRpZmY6T3JpZW50YXRpb249IjEiIHRpZmY6U2FtcGxlc1BlclBpeGVsPSIzIiB0aWZmOllDYkNyUG9zaXRpb25pbmc9IjEiIHRpZmY6WFJlc29sdXRpb249IjcyLzEiIHRpZmY6WVJlc29sdXRpb249IjcyLzEiIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiIGV4aWY6RXhpZlZlcnNpb249IjAyMjEiIGV4aWY6Q29sb3JTcGFjZT0iNjU1MzUiIGV4aWY6UGl4ZWxYRGltZW5zaW9uPSIyMjAiIGV4aWY6UGl4ZWxZRGltZW5zaW9uPSIxMzIiIGV4aWY6U3ViU2VjVGltZT0iNTg3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTJlNjQ1OGYtNDM4Yy04MTRjLTk4ZTctOGQzMGRkYTk5OTE3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmRhODk4YTRlLTU2YjYtNDM0Yi1hOGI5LTE2Y2RjNjk2YWI2MiIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjFGNDgzNUJBMTI5REUzMTE5QjRGOUU1QzA3NTVBQkI2Ii8+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjVmZjkyMzQxLTFmNDQtNWI0MC05YTJlLTE5ZThiOWNhNTk1MCIgc3RFdnQ6d2hlbj0iMjAyMS0wMi0yNFQxODo0MzoyNCswMjowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjb252ZXJ0ZWQiIHN0RXZ0OnBhcmFtZXRlcnM9ImZyb20gaW1hZ2UvanBlZyB0byBpbWFnZS9wbmciLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImRlcml2ZWQiIHN0RXZ0OnBhcmFtZXRlcnM9ImNvbnZlcnRlZCBmcm9tIGltYWdlL2pwZWcgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjNmNiNTAyYi0zYzMyLTgzNDktYTlkZC1mYzM1ZGYxNmEwNTUiIHN0RXZ0OndoZW49IjIwMjEtMDItMjRUMTg6NDM6MjQrMDI6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6M2RmNTcyOGItNWVjNS1jZDQ0LTg0NTgtNTc3Yjc5NzY1Y2ZkIiBzdEV2dDp3aGVuPSIyMDIxLTA2LTE4VDIyOjA1OjIyKzAyOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNvbnZlcnRlZCIgc3RFdnQ6cGFyYW1ldGVycz0iZnJvbSBpbWFnZS9wbmcgdG8gYXBwbGljYXRpb24vdm5kLmFkb2JlLnBob3Rvc2hvcCIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iZGVyaXZlZCIgc3RFdnQ6cGFyYW1ldGVycz0iY29udmVydGVkIGZyb20gaW1hZ2UvcG5nIHRvIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmRhODk4YTRlLTU2YjYtNDM0Yi1hOGI5LTE2Y2RjNjk2YWI2MiIgc3RFdnQ6d2hlbj0iMjAyMS0wNi0xOFQyMjowNToyMiswMjowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoxMmU2NDU4Zi00MzhjLTgxNGMtOThlNy04ZDMwZGRhOTk5MTciIHN0RXZ0OndoZW49IjIwMjEtMDYtMThUMjM6MzI6NTMrMDI6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MGM0NzM5ODEtMGE3ZS01NTQ3LWEzMmYtZTBmYzhjNTIxYWUxIiBzdEV2dDp3aGVuPSIyMDIxLTA2LTE4VDIzOjMyOjUzKzAyOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQ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">ajpanel_menu_biko_73.xml</item>
+	<item name="Emil" font_size="50">ajpanel_menu_Emil.xml</item>
+	<item name="Haitham" font_size="50">ajpanel_menu by Haitham v1.0.xml</item>	
+	<!-- ============================================================================================== -->
+	<!-- Running a script file																			-->
+	<!-- ============================================================================================== -->
+	<item name="Run a Script File" info="" ask="">/media/usb/AAA/Test_Files/long_process_script.sh</item>
+
+	<!-- ============================================================================================== -->
+	<!-- Installing multiple packages																	-->
+	<!-- ============================================================================================== -->
+	<item name="Multiple Install (xz and zip)" ask="Install 2 packaes (xz/zip) ?">
+		opkg install xz
+		opkg install zip
+		#opkg install /tmp/*ipk
+	</item>
+
+	<!-- ============================================================================================== -->
+	<!-- Testing Multiple Commands																		-->
+	<!-- ============================================================================================== -->
+	<item name="Internal Script" info="Simple Script within the Custom Menu XML file">
+		<![CDATA[
+			# ==========================================================
+			echo
+			echo ">>>> [  Testing delayed commands  ] <<<<"
+			SLEEP=0.3
+			ls -d /bin/busybox	; sleep $SLEEP
+			ls -d /bin/cat		; sleep $SLEEP
+			ls -d /bin/chmod	; sleep $SLEEP
+			ls -d /bin/df		; sleep $SLEEP
+			ls -d /bin/echo		; sleep $SLEEP
+			ls -d /bin/ls		; sleep $SLEEP
+			ls -d /bin/ln		; sleep $SLEEP
+			ls -d /bin/mount	; sleep $SLEEP
+			ls -d /bin/sh		; sleep $SLEEP
+			ls -d /bin/uname
+
+			# Check if opkg status file exists
+			echo
+			echo ">>>> [  Checking OPKG Status File  ] <<<<"
+			if test -f /var/lib/opkg/status; then
+				echo "File exists."
+			else
+				echo "File NOT FOUND"
+			fi
+
+			# Check if xz is installed
+			echo
+			echo ">>>> [  Checking 'xz' Package  ] <<<<"
+			if which xz >/dev/null; then echo xz is already installed; else echo 'xz' not installed; fi
+			# ==========================================================
+		]]>
+	</item>
+
+	<!-- ============================================================================================== -->
+	<!-- Testing Installer-Scripts + Demonstrates Embedded Icon											-->
+	<!-- ============================================================================================== -->
+	<submenu title="Install AJPanel" info="Simple Menu (with Embedded Icon)" font_size="40" line_gap="50" icon="/usr/lib/enigma2/python/Plugins/Extensions/AJPan/res/dnld.png">
+		<item name="AJPanel - v9.0.0" ask="Start Installation ?">wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh</item>
+		<item name="AJPanel - Latest" ask="Update AJPanel ?">wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh</item>
+	</submenu>
+
+	<!-- ============================================================================================== -->
+	<!-- Movies in a Grid Menu																	-->
+	<!-- ============================================================================================== -->
+	<submenu title="Movies (Grid)" mode="grid_3x3" info="Movies (shows posters if exists in same directory)" icon="data:image/png;base64,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">
+		<item name="Bugs_Life " icon="/media/usb/movie/Animation/Bugs_Life_1998.jpg">/media/usb/movie/Animation/Bugs_Life_1998.mp4</item>
+		<item name="Jungle Book (1967)">/media/usb/movie/Animation/Jungle_Book_1967.mp4</item>
+	</submenu>
+
+	<!-- ============================================================================================== -->
+	<!-- Movies in a List Menu  ... jpg/png posters with the same names in media dir are show automatically	-->
+	<!-- ============================================================================================== -->
+	<submenu title="Movies (List)" width="1000" font_size="40" line_gap="100" info="Movies (shows posters if exists in same directory)" icon="/usr/lib/enigma2/python/Plugins/Extensions/AJPan/res/mov.png">
+		<item name="Bugs_Life " icon="/media/usb/movie/Animation/Bugs_Life_1998.jpg">/media/usb/movie/Animation/Bugs_Life_1998.mp4</item>
+		<item name="Jungle Book (1967)">/media/usb/movie/Animation/Jungle_Book_1967.mp4</item>
+	</submenu>
+
+	<!-- ============================================================================================== -->
+	<!-- View a picture																					-->
+	<!-- ============================================================================================== -->
+	<submenu title="Pictures Menu" info="Favourite Pictures" mode="grid_4x4" icon="/usr/lib/enigma2/python/Plugins/Extensions/AJPan/res/pic.png">
+		<item name="View Picture">/usr/share/enigma2/skin_default/testscreen.png</item>
+	</submenu>
+
+	<!-- ============================================================================================== -->
+	<!-- Play A Sat Channel ... If PIcon exists, it will be shown automatically							-->
+	<!-- ============================================================================================== -->
+	<submenu title="Channels Menu" info="Favourite Channels Menu" mode="grid_4x4" icon="/usr/lib/enigma2/python/Plugins/Extensions/AJPan/res/tv.png">
+		<item name="Baby TV" info="Play a channel">1:0:1:421d:2f44:13E:820000:0:0:0</item>
+		<item name="MiniMini+ HD" info="Play a channel">1_0_1_32e0_190_13E_820000_0_0_0</item>
+	</submenu>
+
+	<!-- ============================================================================================== -->
+	<!-- Open a directory in AJPanel File Manager														-->
+	<!-- ============================================================================================== -->
+	<item name="/media/" info="Open the directory &quot;/media/&quot; in File Manager">/media</item>
+	<item name="Go to CCcam.cfg" info="Locate CCcam.cfg in File Manager">/etc/CCcam.cfg</item>
+
+</ajp_menu>
