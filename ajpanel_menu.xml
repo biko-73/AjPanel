@@ -261,6 +261,7 @@
 	<item name="Emil" icon="/media/hdd/AJPanel_Backup/icon/emil.png" font_size="50">ajpanel_menu_Emil.xml</item>
 	<item name="Haitham" font_size="50">ajpanel_menu_Haitham.xml</item>
 	<item name="Elie " font_size="50" info="xml file by Elie have a coustm codes - plugins - ...." icon="/media/hdd/AJPanel_Backup/icons/elie.png">ajpanel_menu_Elie.xml</item>
+	<item name="Hamdy " font_size="50">ajpanel_menu_Hamdy.xml</item>
 	<!-- ============================================================================================== -->
 	<!-- Running a script file																			-->
 	<!-- ============================================================================================== -->
