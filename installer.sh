@@ -24,7 +24,7 @@ echo -e "$SEP\n"
 echo 'Checking Server Version ...'
 AJP_VER_TMP="/tmp/"$VER_FILE_NAME
 rm -f $AJP_VER_TMP > /dev/null 2>&1
-wget --no-check-certificate -q -T 2 -O "/tmp/"$VER_FILE_NAME $AJP_URL$VER_FILE_NAME
+wget --no-check-certificate -T 2 -O "/tmp/"$VER_FILE_NAME $AJP_URL$VER_FILE_NAME
 
 # Download/Install
 RES=1
