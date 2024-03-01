@@ -7,6 +7,92 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
+[v9.3.0 .. 2024-03-01]
+- Improved "Backup SoftCAM Files" to include more softcam related files (e.g. PowerCam/SupCam/etc.).
+- Added Subtitle menu option "Set Maximum Delay (Minutes)" to increase the maximum delay.
+- Improved File Manager.
+.. Added options to convert bootlogo mvi files to jpg/png.
+.. Added options to convetr "tar.gz" to "tar.xz" (and vice versa).
+.. Added options to convetr "tar.zst" to "tar.gz" and "tar.xz" (requires "zstd" package).
+.. Improved the option "Unbuild Package" to handle ".tar.zst" files in the ipk/deb (requires "zstd" package).
+- Added functionality to the option "Copy EPG between Channels (from xml file)" to chain DVB to DVB Channels.
+- Improved Custom Menu:
+.. The menu options will now open the last directories (for pictures and xml files separately).
+.. You can change the Grid-Mode font size with the attribure font_size="x" (x is in range 10-50).
+.. You can add "About" to show descritpion of your custom menu (or change-log) as follows:
+... 1- Create a ".txt" file with the information you need to show.
+... 2- Add a custom item with the name starting with the word "About".
+... Example : <item name="About AJPanel">/media/hdd/xx/my_panel.txt</item>
+- Improved Binder:
+.. The option "Show Chains" (Green Button) will show more informative list.
+.. Will show transponder data for the selected channel.
+.. You can switch between TV and Radio modes (with RCU TV Button).
+- Improved AJPanel Settings to create and use a default backup directory "../ajpanel_backup/" (if not set by user).
+- Improved PIcons option "Suggest PIcons for Current Channel" to use case-insensitive search (for better result).
+- Improved IPTV "Find" result to show the root category name in info. (with INFO button).
+- Rearranged edit-options to use the Menu Button for more options (besides the Yellow Button).
+- Fixed portal zapping in bouquets to point to the right name in Channel List (for duplicate Reference Codes in bouquet).
+- Fixed the error "Cannot access the path" when accessing the Terminal from a Hotkey.
+
+# ------------------------------------------------------------------------------
+[v9.2.0 .. 2024-01-25]
+- Added new window with split menus (DVB and IPTV Channels) to easily chain channels in:
+.. "Share Reference with DVB Channels (from xml file)"
+.. "Copy EPG/PIcons between Channels (from xml file)"
+- Added new the option "Chain References to File Channels" in XML-TV page (to link DVB References to names in XML-TV files).
+- Improved File Editor with Lines Multi-Selection (to copy/paste/delete).
+.. Note: All edit-options hve been moved from the Yellow Button to the Menu Button.
+- Improved Custom Menu:
+.. Added menu options to import other custom menus, delete menu items and change wallpaper/icons.
+... Note: If the imported xml includes main icon (e.g. <ajp_menu icon="xx"...>), the icon will be set automatically.
+.. Added menu options to change the wallpaper/shade/cursor picture and colors.
+.. Added menu options to delete the cached picture files.
+.. Added new xml attribute "picpath" to add a common path for icons and wallpaper. This way you can use file name witout path in all icons.
+.. Added new xml attribute "box_gap" to Grid-Menu to increase the gap between boxes (vertically/horizontally).
+.. Improved to play IPTV channels from a menu item.
+.. External menu files can be added from any directory. If full path is not used, the backup directory is used.
+.. Wallperaprs can be added List-Menus.
+.. Menu wallperapr image (bg="") accepts Base65 fromat now.
+.. Added Base64 pictures caching for faster loading.
+.. Cached picture files will be saved into the cache directory "ajpanel_menu" (in the backup directory).
+.. Deleting the cache directory will not harm. The panel will created it if necessary.
+.. Fixed the crash on DreamTwo (Merlin) in the when aligning text.
+- Improved Subtitle:
+.. Increased Subtitle Min/Max delay time to 20 minutes.
+.. Improved Subtitle settings value-picker.
+- Fixed EPG option "Read Current Channel EPG" (epg is not imported after adjusting time).
+- Fixed Search-by-Typing in Bouquet Editor.
+
+# ------------------------------------------------------------------------------
+[v9.1.0 .. 2023-12-19]
+- Added "Custom Menu" functionality to create a custom panel from xml file "ajpanel_menu.xml".
+.. The menu can be accessed from Main Page menu and from Extensions Menu (normally Blue Button).
+.. The custom menu can be in a List or Grid layout and sizes and colors are fully customizable.
+.. Read the brief guide in Main Page menu option "Custom Menu Help".
+.. See the detailed description and sample menu layouts in the sample file "ajpanel_menu.xml".
+- Added new Page to handle XML-TV files with the following main features:
+.. Find EPG from XML-TV files for the current channel and import it to system.
+.. Use channels.xml and XML-TV files to automatically import EPG to several channels.
+.. Download and process XML-TV files (xml/gz/xz). URLs should be provided by the users.
+.. Separate channels from large xml files into smaller files (with channels Multi-Select).
+.. Import EPG from XML-TV files to the system.
+.. Show EPG list and adjust its time before importing to system.
+.. Check and validate xml files (tags validation + Statistic).
+- Added options to EPG page to save EPG to XML-TV file.
+.. Read Current Channel EPG : To save it to a file or adjust EPG time offset and send back to the system.
+.. Save EPG (from Current Channel) : To save the EPG from the playing channel.
+.. Save EPG (from Current Group) : To save the EPG from the playing channel and all its group Current Root (All / Satellites / Provider / Favourites).
+- Added two options to Terminal to change the font size of the Commands/History windows.
+- Added a new option to File Manager to "Convert to Base64 String".
+- Improved the Terminal to handle script file paths that include "#" or spaces (to automatically chmod 755 then run the script file).
+- Fixed Text-Wrapping option "Enable/ Disable Text Wrapping" for the Terminal (and other text windows).
+- Improved File Manager to extract .xz files (not .tar.xz).
+- Improved "Check & Filter" for portal servers to show more detailed result.
+- Fixed Plugins Browser options "Remove Plugins" and "Download New Plugins" for Egami-10.4-R14.
+- Fixed a crash on some images at the end EPG Translation (before showing result message).
+- Fixed a crash when reading package info for some packages.
+
+# ------------------------------------------------------------------------------
 [v9.0.0 .. 2023-10-28]
 - Improved the panel installation to automatically install the optional dependencies.
 -- This depends on availability of the dependencies on your updated feed.
