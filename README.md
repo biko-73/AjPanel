@@ -9,9 +9,6 @@
 
 Guide
 
-![Archive_from_different_paths](https://github.com/biko-73/AjPanel/help/raw/Archive_from_different_paths.jpg)
-![solarized palette](https://github.com/altercation/solarized/raw/master/img/solarized-palette.png)
-
 ![Archive_from_different_paths](https://raw.githubusercontent.com/biko-73/AjPanel/master/help//Archive_from_different_paths.jpg)
 
 ![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/CustomCommandsFile.jpg)
