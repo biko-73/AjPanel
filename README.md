@@ -9,7 +9,10 @@
 
 Guide
 
-![Alt tex](https://raw.github.com/biko-73/AjPanel/help/Archive_from_different_paths.jpg)?raw=true"Archive_from_different_paths")
+![Alt tex](https://raw.github.com/biko-73/AjPanel/master/help/Archive_from_different_paths.jpg)?raw=true"Archive_from_different_paths")
+![solarized palette](https://github.com/altercation/solarized/raw/master/img/solarized-palette.png)
+![Archive_from_different_paths](https://github.com/AjPanel/help/raw/master/Archive_from_different_paths.png)
+
 
 ![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Archive_from_different_paths.jpg)
 
