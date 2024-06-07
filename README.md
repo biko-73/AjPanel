@@ -9,38 +9,38 @@
 
 Guide
 
-https://github.com/biko-73/AjPanel/blob/main/help/Archive_from_different_paths.jpg
 ![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Archive_from_different_paths.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/ChannelsBrowser.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/CustomCommandsFile.jpg)
 
 https://github.com/biko-73/AjPanel/blob/main/help/CustomCommandsFile.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Archive_from_different_paths.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/Custom_Menu_Samples.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Custom_Menu_Samples.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/HotkeysAssign.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/HotkeysAssign.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/IPTV_ChangeReferenceForBouquets.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/IPTV_ChangeReferenceForBouquets.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/IPTV_FavouriteServers.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/IPTV_FavouriteServers.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/PlayeBarColor.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/PlayeBarColor.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/Remove_package_using_pkg_file.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Remove_package_using_pkg_file.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/Screenshot_Hotkeys.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Screenshot_Hotkeys.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/Screenshot_OSDFileName.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Screenshot_OSDFileName.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/ShareEPG.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/ShareEPG.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/SignalMonitor_accees.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/SignalMonitor_accees.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/SubtitleTextColor.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/SubtitleTextColor.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/Subtitle_find_local_srt.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Subtitle_find_local_srt.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/View_non_UTF8_file.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/View_non_UTF8_file.jpg)
 
 # ------------------------------------------------------------------------------
 
