@@ -7,6 +7,61 @@
 
 ![](https://komarev.com/ghpvc/?username=biko-73)
 
+Guide
+https://github.com/biko-73/AjPanel/blob/main/help/Archive_from_different_paths.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/ChannelsBrowser.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/CustomCommandsFile.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/Custom_Menu_Samples.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/HotkeysAssign.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/IPTV_ChangeReferenceForBouquets.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/IPTV_FavouriteServers.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/PlayeBarColor.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/Remove_package_using_pkg_file.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/Screenshot_Hotkeys.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/Screenshot_OSDFileName.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/ShareEPG.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/SignalMonitor_accees.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/SubtitleTextColor.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/Subtitle_find_local_srt.jpg
+https://github.com/biko-73/AjPanel/blob/main/help/View_non_UTF8_file.jpg
+# ------------------------------------------------------------------------------
+
+[v9.4.0 .. 2024-06-07]
+- Added new option "Move Selected Item" to Custom Menu (to change the position of items in main menu).
+- Added "General Guide" to main page menu to show some AJPanel general help.
+- Improved AJPanel Update to internally use the new URL ( https://github.com/AMAJamry/AJPanel ).
+.. The file "ajpanel_update_url" is no longer needed for the update process.
+- Added the option "EPG Events Counter" to EPG Page (to count the events for all DVB & IPTV channels).
+- Improved "M3U/M3U8 File Browser":
+.. To play M3U/M3U8 files that contain DVB channels and Local media files.
+.. To show current file name in INFO.
+- Improved File Manager to handle ".m3u" files in "M3U/M3U8 File Browser" (instead of trying to play it).
+- Improved IPTV Favourite menu items to show server host when Menu button is clicked.
+- Improved reading portal Host/MAC from files wih more formats.
+- Improved skipping adults channels and categories.
+- Improved "XML-TV Tools".
+.. Improved the Green Button to pick a Channel-Reference file (if file is not initially set).
+.. Improved the process to cache the total tags per XML file (for faster process).
+- Improved PIcons page (Green Button) to locate the current PIcon (if current channel name is used as file name).
+- Improved "Restore" pages:
+.. Added "Rename" (Blue Button) to partially rename backup files.
+.. Added INFO Button to show selected file information.
+- Improved Player Bar option ("Start Download") to be available for some URL structures.
+- Improved "Dev. Info." >> "Settings File" data to be tabulated.
+- Fixed Portal Files Editor to point to the current line number.
+- Fixed portal download from tables options "Download Current Movie" and "Download Current Series".
+- Fixed the problem of showing "Processing ..." followed by no action.
+- Fixed a crash on VTi (in File Manager) when browsing a directory with file extension ".7z" or ".7".
+- Fixed File Manager Multi-Select counter (when selecting/unselecting all).
+- 
+# ------------------------------------------------------------------------------
+[v9.3.1 .. 2024-03-04]
+- Improved INFO button in Context Menu ("Find") to show Bouquet-Name for IPTV channels.
+- Improved the option "Suggest PIcons for Current Channel" to find partaial file names.
+- Fixed the warning message that appears when opening AJPanel.
+- Fixed the problems of saving the backup-directory on some images.
+
+# ------------------------------------------------------------------------------
 [v9.3.0 .. 2024-03-01]
 - Improved "Backup SoftCAM Files" to include more softcam related files (e.g. PowerCam/SupCam/etc.).
 - Added Subtitle menu option "Set Maximum Delay (Minutes)" to increase the maximum delay.
