@@ -10,6 +10,7 @@
 Guide
 
 https://github.com/biko-73/AjPanel/blob/main/help/Archive_from_different_paths.jpg
+![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Archive_from_different_paths.jpg)
 
 https://github.com/biko-73/AjPanel/blob/main/help/ChannelsBrowser.jpg
 
