@@ -9,9 +9,8 @@
 
 Guide
 
-![Archive_from_different_paths](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Archive_from_different_paths.jpg)?raw=true "Optional Title")
+![Alt tex](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Archive_from_different_paths.jpg)?raw=true"Archive_from_different_paths")
 
-![Alt text](https://github.com/biko-73/AjPanel/blob/main/help/Archive_from_different_paths.jpg?raw=true "Archive_from_different_paths")
 
 ![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Archive_from_different_paths.jpg)
 
