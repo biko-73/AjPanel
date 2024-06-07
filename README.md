@@ -9,21 +9,37 @@
 
 Guide
 https://github.com/biko-73/AjPanel/blob/main/help/Archive_from_different_paths.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/ChannelsBrowser.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/CustomCommandsFile.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/Custom_Menu_Samples.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/HotkeysAssign.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/IPTV_ChangeReferenceForBouquets.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/IPTV_FavouriteServers.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/PlayeBarColor.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/Remove_package_using_pkg_file.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/Screenshot_Hotkeys.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/Screenshot_OSDFileName.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/ShareEPG.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/SignalMonitor_accees.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/SubtitleTextColor.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/Subtitle_find_local_srt.jpg
+
 https://github.com/biko-73/AjPanel/blob/main/help/View_non_UTF8_file.jpg
+
 # ------------------------------------------------------------------------------
 
 [v9.4.0 .. 2024-06-07]
