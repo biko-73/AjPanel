@@ -9,8 +9,7 @@
 
 Guide
 
-![Alt tex](/AjPanel/master/help/Archive_from_different_paths.jpg)?raw=true"Archive_from_different_paths")
-
+![Alt tex](https://raw.github.com/biko-73/AjPanel/help/Archive_from_different_paths.jpg)?raw=true"Archive_from_different_paths")
 
 ![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Archive_from_different_paths.jpg)
 
