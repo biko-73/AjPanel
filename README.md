@@ -10,14 +10,13 @@
 Guide
 
 ![solarized palette](https://github.com/altercation/solarized/raw/master/img/solarized-palette.png)
-![Archive_from_different_paths](https://github.com/biko-73/raw/AjPanel/help/Archive_from_different_paths.png)
+![Archive_from_different_paths](https://github.com/biko-73/raw/master/help/Archive_from_different_paths.jpg)
 
 
 ![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Archive_from_different_paths.jpg)
 
 ![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/CustomCommandsFile.jpg)
 
-https://github.com/biko-73/AjPanel/blob/main/help/CustomCommandsFile.jpg
 ![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Archive_from_different_paths.jpg)
 
 ![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/Custom_Menu_Samples.jpg)
