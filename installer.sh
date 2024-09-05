@@ -1,8 +1,7 @@
 #!/bin/sh
 # ============================================================================================================
 # Purpose	: Install AJPanel on Enigma2 Devices (automatically installs the right ipk/deb package).
-# Usage		: wget https://raw.githubusercontent.com/AMAJamry/AJPanel/main/installer.sh -O - | /bin/sh
-# Home Page	: https://github.com/AMAJamry/AJPanel
+# Usage		: wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh
 # ============================================================================================================
 
 # ============================================================================================================
@@ -18,7 +17,7 @@ echo -e "$SEP\n"
 # Check Version	... /tmp/version
 # Download "version" file to /tmp/version
 echo 'Checking Server Version ...'
-AJP_URL="https://raw.githubusercontent.com/AMAJamry/AJPanel/main/"
+AJP_URL="https://raw.githubusercontent.com/biko-73/AjPanel/main/"
 VER_FILE_NAME='version'
 AJP_VER_TMP="/tmp/"$VER_FILE_NAME
 rm -f $AJP_VER_TMP > /dev/null 2>&1
