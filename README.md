@@ -43,6 +43,306 @@ Guide
 
 # ------------------------------------------------------------------------------
 
+[v10.7.0 .. 2025-03-04]
+- Added a new option to the Player Bar menu to change the action of Red-Button to:
+.. "Close Bar & Recall Last DVB Service" (default action).
+.. "Show Signal Monitor".
+- Added new option to Bouquet Editor to "Fix Media PIcons (for Movies in ALL Bouquets)".
+.. To process bouquets and assign PIcons for local media services (if posters exist with the media).
+- Improved restoring tuner to utilize backups between images:
+.. Example: Create backups on OpenATV and restore them on OpenATV (and vice versa).
+- Added "Save to M3U (Live/VOD)" to save M3U for servers that do not provide M3U files.
+- Added "Save to M3U (Live/VOD/Series)" to save M3U for servers that do not provide M3U files.
+.. Better Series/Episodes categorization (but slower than downloading the server M3U).
+- Added "Play URL" (Blue Button) to the Download Manager to play the server URL.
+- Modified some options to save the result files to the "/ajpanel_iptv/" (in the backup directory):
+.. When saving channels to M3U file (from IPTV tables and Bouquet Editor).
+.. When Merging Playlist/Portal files.
+- Improved Playlist files reader to handle files exported from Playlist lines table.
+- Improved Playlist/Portal files menu to be updated with new files (after exporting their lines to txt file).
+- Improved Posters Mode title to show Category Name.
+- Improved IPTV Channel Name Prefix removal for names with Unicode symbols.
+- Added General Guide help for Player Bar "Launching", "Shortcuts (OK & Exit)" and "Stopping Current Channel".
+- Fixed the error "HTTP Error 403: Forbidden" (for some Playlist servers).
+
+# ------------------------------------------------------------------------------
+
+[v10.6.0 .. 2025-02-11]
+- Added a second menu to the Player-Bar for quick access to more options.
+.. "Stop Current Service"
+.. "Stop Current Service & Close AJPanel"
+.. "Play Last Stopped Channel"
+.. "Channel Selection"
+.. "Channels Browser"
+.. "Zap History"
+.. "Close AJPanel"
+- Improved launching "Channel Selection" to point to the current channel.
+- Improved Channels Browser:
+.. Added INFO Button to show channel info.
+.. Zapping will add the newly played service to the Zap History.
+.. Rearranged the buttons and their usage (OK/Red/Green/Blue Buttons).
+- Improved Channels Binder:
+.. Added the options "Next Chained Service" and "Previous Chained Service" Channels Binder to locate chained channels.
+.. Will allow binding a source channel to multiple target channels.
+.. Title will show current service mode (TV/Radio).
+- Fixed "Share Reference with DVB Channels (from xml file)" to prevent changing duplicate reference in bouquet file.
+- Fixed the problem of skipping pyo/pyc files when creating ipk/deb packages.
+
+# ------------------------------------------------------------------------------
+
+[v10.5.1 .. 2025-01-30]
+- Fixed Custom Menu when loading an invalid wallpaper picture file..
+- Improved AJPanel instllation and update for DreamOS.
+- Improved "AJPanel Optional Dependencies" table for DreamOS.
+- Fixed a crash when starting subtitle on DreamOS.
+- Fixed Main Page font size on DreamOS (it gets a bit smaller when returning from IPTV Page).
+
+# ------------------------------------------------------------------------------
+
+[v10.5.0 .. 2025-01-26]
+- Added "Rename" (Blue Button) to rename the local servers in "Local Servers & M3U Cache" page.
+- Improved Subtitle Line/Delay Changer (which opens with Left & Right keys):
+.. Will not change the delay until the arrows are used.
+.. Will not timeout and can be closed with Exit or OK.
+.. Added Up/Down Buttons to change the delay.
+.. Added "Reset" (Yellow Button) to reset the delay.
+.. Shows auto-updated line number and line time.
+- Can now download from IPTV Catchup programs.
+- Improved searching in Playlist option "Find in Selected" (Blue Button) for slow servers.
+- Improved Player-Bar:
+.. If hidden, Cancel/Exit Button will show it back (instead of closing the bar).
+.. Subtitle indicator will show different icons for embedded subtitles, file-subtitles or both.
+.. The subtitle indicator works with DVB channels now.
+.. Added new Audio-Track icon if the current channel has more than one Audio-Track.
+- Improved File Manager process and error handling for the options "Create New File" and "Create New Directory".
+- Improved File Manager option "Create New Directory" to offer a name that matches the selected file (useful for managing movies paths).
+- Improved Settings to automatically separate saved files to separate paths in the backup directory.
+.. Removed "Created Package Files (IPK/DEB/etc.) + Package Projects"
+.. Removed "Downloaded Packages (from feeds)"
+.. Removed "Exported Tables"
+.. Removed "Exported PIcons/Screenshots/Pictures"
+- Improved exiting from "Find" and "Channels Tools" to overcome hanging (reported on a specific skin).
+- Fixed XML-TV page reaction (when there is no Channel-Reference File).
+- Fixed Subtitle where it asks to save changes when exiting a newly started subtitle.
+
+# ------------------------------------------------------------------------------
+
+[v10.4.0 .. 2025-01-04]
+- Improved refreshing IPTV frozen channels.
+... Added new settings : "Refresh + Notify" and "Silent Refresh" (to show/hide "Refreshing" message).
+.. Improved the process for VOD/Series streams.
+- Fixed some portal servers which stopped working on v10.3.0.
+- Fixed the error "dpkg was interrupted" after installing AJPanel DEB package (on some DreamOS images).
+
+# ------------------------------------------------------------------------------
+
+[v10.3.0 .. 2025-01-01]
+- Added the option "Merge All Files" (Blue Button) to Playlist file browser (to merge the listed files into one file for easier processing).
+- Improved Playlist option "Check & Filter" to add the Expiry Date to the result table.
+- General IPTV improvements:
+.. Improved reading Playlist lines from files to accept user custom remarks (separated by "#").
+.. Improved reading Playlist and Portal lines from files to skip duplicate servers data.
+.. Improved IPTV Channel Name Prefix removal.
+.. Improved servers filter options for Portal & Playlist to refresh the files list to show the new file.
+.. Fixed handling some Portal servers that show the error "Forbidden".
+.. Fixed a type of Portal Server which was not providing categories.
+.. Fixed Playlist IPTV Servers timeout error when reading VOD categories from some servers.
+- Improved INFO page to translate Current and Next events.
+- Added "Save" option (Yellow Button) to the "Play with ..." menu (to save current player as default player).
+- Improved Terminal.
+.. Improved to handle Progress-Bars and color-codes from Shell and Python scripts.
+.. Added "Delete File" (Yellow Button) to the Terminal option "Change Custom Commands File".
+- Improved reading packages/feed on VTi.
+- Improved Local Servers handling:
+.. Added "Find" (Yellow Button) option to search in Live/VOD/Series.
+.. Improved adding channels to bouquets (to include Server host name in bouquet name).
+.. Improved M3U files handling (when opened from File Manager or M3U/M3U8 File Browser).
+- Improved File Manager:
+.. Add shortcut key Back/Recall to move to parent directory.
+.. Add shortcut key FAV to save current/selected directory as the startup directory.
+.. Add option "Keys (Shortcuts)" too File Manager "More Options" menu.
+- Fixed Subtitle option "Set Maximum Delay" to apply changes immediately (no need to exit then reopen then subtitle).
+- Fixed a crash in the option "Tuners Info" (in "Dev. Info" page).
+- Fixed a crash when opening "XML-TV Tools" with the presence of bad xmltv file format.
+
+# ------------------------------------------------------------------------------
+
+[v10.2.3 .. 2024-12-05]
+- Fixed the option "IPTV Server Browser (from Current Channel)".
+- Fixed IPTV Service Info.
+# ------------------------------------------------------------------------------
+
+[v10.2.2 .. 2024-12-05]
+- Improved File Manager to execute Python script files (py/pyo/pyc) in the Terminal.
+.. Note: Currently does not interact with input() function.
+- Improved Subtitle-Search method.
+- Improved IPTV PIcons/Posters Download for some images.
+
+# ------------------------------------------------------------------------------
+
+[v10.2.1 .. 2024-12-02]
+- Fixed a crash on DreamBox (reported on DreamBox-920 with Merlin image OE2.5).
+
+# ------------------------------------------------------------------------------
+
+[v10.2.0 .. 2024-12-01]
+- Added Long-PVR (Long-Playlist) key to take a screenshot.
+- Added "Delete Reader" (Red Button) to the option "NCam/OSCam Readers" to delete readers.
+- Added new options to "OSCam/NCam Status" (in Blue Button) to delete a reader and clean inactive and duplicate readers.
+- Improved Download Manager resume process.
+- Improved Filter in "Download/Install Packages (from image feeds)" to filter packages per feed.
+- Improved Player Bar to forward/rewind while subtitle is running (without showing the bar).
+- Improved Player-Bar Buttons.
+.. Added PVR/Playlist button to show System Channel Selection.
+.. OK-Button will show Channel List (if no active service).
+.. Long-Stop and Long-Power buttons will stop current service and zap to the last used service (or show Channel List).
+- Improved Stream Relay handling for images with Stream Relay Patch (to handle PIcons/Signal/Data/etc.).
+- Fixed changing AJPanel font on DreamOS.
+- Fixed "M3U/M3U8 File Browser" to handle unicode files.
+- Fixed Playlist timeout problem (when reading categories for some servers).
+- Fixed File Manager error when converting .mvi files to jpg/png.
+.. Note: this option may not work on some images if the provided ffmpeg does not support mvi.
+
+# ------------------------------------------------------------------------------
+
+[v10.1.0 .. 2024-10-14]
+- Added the option "Export ALL to M3U File ..." to IPTV tables to save channles to M3U file (including PIcon URLs).
+- Added a new option to Bouquet Editor to "Export Selected Bouquets to M3U File".
+- Added options to add a font to the system (without changing system fonts).
+.. Usage Example: to add Arabic font if missing from Images/Skins.
+.. The new options in "Color/Font" (Blue Button in Main page):
+... 1- "Add Extra Font to System" : Adds a font to the system (no restart requierd).
+... 2- "Replace Extra Font" : Replaces the added font with another one (no restart requierd).
+... 3- "Remove Extra Font" : Removes the the added font (requires GUI Restart).
+... Note: The panel does not provide font files (it uses the fonts in /usr/share/fonts).
+- Added a yellow icon to Player Bar to highlight movies with subtitle tracks.
+- Added options to download M3U files from servers (with different formats).
+- Added an option to download XML-TV (EPG) from from servers.
+- Added options to download server resources to browse the server locally.
+.. Use the new option "Local Servers & M3U Cache" to access Local Cached Servers.
+- Improved "M3U/M3U8 File Browser" to be cached for much faster browsing.
+- Improved File Manager to play M3U/M3U8 files.
+- Improved the option "IPTV Server Browser (from Playlists)" to read URL/Username/Passwrod from 3 separated lines.
+- Added option to Playlist Categories window menu to sort by "Server Default Sorting".
+- Replaced "Check & Filter" (Blue Button) in Portal table with two options:
+.. "Filter Responsive Servers" (same as previous "Check & Filter").
+.. "Find Servers with Playlist Access" (to create Playlist URLs from Portal servers).
+- Improved "All to Playlist" in "IPTV Server Browser (from M3U/M3U8 Subscription File)".
+.. This option creates a file with Playlist URLs from all the listed M3U.
+.. Now runs with a progress bar with the ability to stop at any point.
+- Improved Movies Browser:
+.. The Player can zap from the Movies Browser now.
+.. The option "Change Poster (locate manually) ..." will now open File Manager to (to preview the posters).
+.. When the Movies Browser starts, it will move the cursor to the current playing movie.
+- Improved frozen-channel auto-refresh.
+.. Improved to refresh all types of frozen IPTV Channels (Live/VOD/Series).
+.. Fixed the case where System Info-Bar is shown during the refresh process.
+- Improved media metadata for portal channels (in INFO page).
+- Improved "M3U/M3U8 File Browser".
+.. Handles files with satellite channels.
+.. Prevents replaying chan if already playing (when clicking OK).
+- Improved Player Bar to stop the playing service with Long-Power and Long-Stop buttons.
+- Fixed "General Guide" option (show no info).
+- Fixed Portal server handling of some server types (which were giving errors).
+- Fixed some issues with Movies Resume for slow IPTV servers and Ref. Type 4097 (servicemp3).
+- Fixed DreamOS issues:
+.. Fixed DreamOS Hotkeys detection by the panel to launch the Player Bar.
+.. Fixed Screenshot to use Long-PVR to take scfreenshots (test on Dream-Two / Gemini-4.2).
+.. Fixed changing Subtitle font size.
+.. Fixed Plugins options which were not working on DreamOS.
+... "Download/Install Packages (from image feeds)"
+... "Remove Packages (show all)"
+... "Remove Packages (Plugins/SoftCams/Skins)"
+... "Upgradable Packages"
+... "Active Feeds"
+.. Fixed DreamOS freezing when AJPanel displays a picture on some screens.
+.. Fixed DreamOS freezing when using Bouquet Importer.
+.. Fixed a crash on DreamOS when clicking "Audio" Button in Player bar.
+- Fixed VTi issues:
+.. Fixed changing Subtitle font size.
+.. Fixed Player Hotkeys (were not working).
+.. Menus wrap-around scrolling.
+.. Fixed a crash in Channel Binding/Chaining.
+
+# ------------------------------------------------------------------------------
+
+[v10.0.0 .. 2024-08-30]
+- Added Resume functionality to auto restore last watched movies position.
+.. Resume points are saved when the movie is stopped, zapping, restarting GUI, etc.
+.. It works regardless of where the movie is played from (bouquets, players, etc.).
+.. It can be enabled/disabled in the settings for "All", "IPTV Only" and "All (Except IPTV)".
+.. Resume points are only saved after the first minutes.
+.. The "Movies Resume History" is in the Main page, Player-Bar, and system Extensions Menu.
+.. The history files are saved in the directory "ajpanel_resume" (in your backup directory).
+- Improved File Manager
+.. Added preview of picture files when the cursor points to them.
+.. Added the option "Rotate Image" to rotate a picture (with rotation angle selection).
+.. Added the option "Flip Image" to flip a picture horizontally and vertically.
+.. Added the option "Save as ..." to convert between png/jpg/gif/tif/bmp.
+.. Converting from tif/gif will save all their frames/pages to files..
+.. Improved to view svg picture files.
+.. Improved File-Propererties to show Video Metadate for local media files (video streams info).
+.. Improved the option "Move" to be much faster when moving files/directories within the same mount.
+- Improved PIcons Manager layout and portrait pictures dimension ratio.
+- Improved Portal servers handling:
+.. Faster starting/changing portal channels in the tables and from the bouquets.
+.. Catch-up channels will be flagged in the table, and their events can be selected in the Player-Bar.
+.. Using OK Button (to play a channel from tables), will not replay it if already playing.
+.. Improved Live Auto-Refresh to wait for 10 seconds untill next refresh (for slow servers).
+.. Improve downloading Movies from Portal servers.
+.. Improved starting portal channels with Reference Type 4097 (servicemp3).
+.. Fixed handling some portals (which were not working).
+- Improved Player-Bar:
+.. Added Signal Bars (for Satellite channels).
+.. Added "Cut-List" (Blue Button) for movies default mark points (if the movie has no chapters).
+.. Improved Cut-List table to preview screenshots from local movies.
+.. Added "Catch-up" (Yellow Button) which appears if archived events are available.
+.. Added Catch-up for Portal servers (depends on availability on servers).
+.. Added field to show the type of channel (DVB, Local, Portal, FTP, Catch-up, Playlist, IPTV).
+- Improved IPTV Service Information:
+.. Faster launch of the window + will search for EPG/PIcon/Poster in the background.
+.. Downloads EPG for IPTV (Live/VOD/Series) from Portal and Playlist servers.
+.. Improved IPTV Posters Mode layout + faster picture loading.
+.. Faster Posters/PIcons download from IPTV tables.
+.. The EPG/PIcon/Poster received from servers will automatically update the system EPG/PIcon.
+- Improved Service Information page:
+.. Current event from System EPG will be translated (to the language selected by user in EPG page).
+.. Added Video Metadate for local and IPTV movies.
+- Improved Movies Browser:
+.. Added Resume Points Progress-Bar indicating the last watched position.
+.. Added the option "Go to Current Movie" to jump to the playing movie (if listed).
+.. Added options to add a movie (or all movies) to a bouquet.
+.. Improved layout.
+- Improved subtitle:
+.. Added progress-bar to similarity-search (stoppable during the search).
+.. Changing the delay with left/right arrows will show the changed delay and line time.
+.. When start, the Lines Table will point to the current line.
+.. Fixed Subtitle similarity search (sometimes shows the message "No event Name").
+- Improved Custom Menu:
+.. Added a new option to Settings page (to change the default Custom Menu files path).
+.. Fixed the issue of encoded non-English text in menu files after changing icons/colors/etc.
+.. Disable the option "Delete Current Item" for List-Menus.
+- Added new option to "Update Current Bouquet EPG/PIcons (from IPTV Server)" to update both EPG and PIcons (removed old options).
+- Added the option "Fix Media Path (for All Bouquets)" to Bouquets Editor to fix "/media/xx/movie/" path for bouquets.
+- Improved Screenshot with a menu button to delete the taken screenshot file (during the preview).
+- Improved IPTV Channel Name Prefix removal.
+- Added Key-0 to jump to first/last item, and Channel-Up/Downs to scroll pages in:
+.. Movies Broswer
+.. Channel Broswer
+.. Plugins Broswer
+.. PIcons Manager
+.. Custom Menu (Grid Mode)
+.. IPTV Posters Mode
+- Improved Console window:
+.. Fixed the option "Save to File" which was only saving the line "Processing ...".
+.. Fixed the menu to return to the previous window when closed with Exit button.
+- Fixed "HTTP Error 461:" when trying to access some Playlist servers (or sometimes Error 403).
+- Fixed downloading Series Episodes to save the files to a separate directory with Series name.
+- Fixed Posters Mode (was not showing PIcons from server with .jpeg files).
+- Fixed crash on Dream-Two (newnigma2) when changing the fonts.
+
+# ------------------------------------------------------------------------------
+
 [v9.4.0 .. 2024-06-07]
 - Added new option "Move Selected Item" to Custom Menu (to change the position of items in main menu).
 - Added "General Guide" to main page menu to show some AJPanel general help.
