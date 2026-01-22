@@ -42,6 +42,55 @@ Guide
 ![Preview](https://raw.githubusercontent.com/biko-73/AjPanel/master/help/View_non_UTF8_file.jpg)
 
 # ------------------------------------------------------------------------------
+[v10.8.5 .. 2025-10-14]
+- Fixed online upgrade version change issue.
+
+# ------------------------------------------------------------------------------
+[v10.8.4 .. 2025-08-28]
+- Fixed starting the movie from the beginning when it ends on some servers.
+
+# ------------------------------------------------------------------------------
+[v10.8.3 .. 2025-05-13]
+- Fixed Posters Mode for some servers where the same PIcon/Poster is shown for all channels.
+
+# ------------------------------------------------------------------------------
+[v10.8.2 .. 2025-05-08]
+- Added option to Services Tools to delete DVB channels from system (delete from bouquets and lamedb).
+- Renamed the option "Services (Parental-Control + Hidden)" to "Services (Lock, Hide, Delete, Add to Fav)".
+- Added the new filter "Reference Type ..." to PIcons page to filter PIcons by Reference Type in file name.
+- Improved File Manager conversion from "zip" to "tar.gz" (and vice versa).
+- Improved File Manager options "Create New File" and "Create New Directory" to point to the newly created File/Directory.
+- Improved Download Manager to highlight storage problems (e.g. if out of storage space).
+- Improved File Manager option "Create SymLink" (for file/directory names that include spaces).
+- Improved free disk space calculations to show the free and available space.
+- Improved "Services/Channels" tables:
+.. Improved Service Info (when clicking INFO Button).
+.. After playing a channel, zapping up/down in Player-Bar will change channels in tables (not in bouquets).
+- Improved AJPanel update process for some images on DreamOS (to fix "dpkg was interrupted" error).
+
+# ------------------------------------------------------------------------------
+[v10.8.1 .. 2025-04-14]
+- Added "Radio Services" filter to the table menu in "Services (Parental-Control + Hidden)".
+- Improved "Stream Relay Services" filter in "Services (Parental-Control + Hidden)".
+- Fixed Screenshot file names to allow Arabic characters when a screenshot is taken for Arabic titled event/video.
+- Fixed some DreamOS installation problems.
+
+# ------------------------------------------------------------------------------
+[v10.8.0 .. 2025-04-13]
+- Added the option "Change System Fonts Size" to increase/decrease current fonts size for the system (without a restart).
+- Added buttons to System Font Changer to increase/decrease System Font size (without a restart).
+- Added a new option to Movies Browser to download posters for the listed movies.
+- Added a new option to Player Bar second menu to download posters for the playing event/movie.
+- Improved error handling in File Manager Copy/Move functions (especially with Permissions issues).
+- Improved PIcons "Current Service" (Green Button) to jump to the correct PIcon after zapping.
+- Fixed backup files to include DreamOS images (GP4 and Dream-Elite).
+- Fixed Subtitle text clipping on the sides (for DreamOS Dream-Elite).
+
+# ------------------------------------------------------------------------------
+[v10.7.1 .. 2025-03-08]
+- Fixed a crash on OpenDriod in the new option "Set Local Media PIcons (ALL Bouquets)".
+
+# ------------------------------------------------------------------------------
 
 [v10.7.0 .. 2025-03-04]
 - Added a new option to the Player Bar menu to change the action of Red-Button to:
